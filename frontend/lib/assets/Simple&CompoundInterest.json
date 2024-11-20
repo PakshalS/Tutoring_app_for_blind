@@ -1,0 +1,86 @@
+{
+  "name": "Simple and Compound Interest",
+  "sections": {
+    "section1": {
+      "name": "Definition of Interest",
+      "content": [
+        "Interest is the amount of money that is paid on borrowed funds or the amount received on money that is lent.",
+        "The amount of money that is borrowed or lent is called the principal.",
+        "The total sum of the interest and the principal is referred to as the amount.",
+        "The percentage at which interest is charged on the principal is known as the rate of interest.",
+        "The duration for which the money is borrowed or deposited is referred to as the time."
+      ]
+    },
+    "section2": {
+      "name": "Types of Interest",
+      "content": [
+        "Interest can be classified into two types: Simple Interest and Compound Interest."
+      ]
+    },
+    "section3": {
+      "name": "Simple Interest",
+      "content": [
+        "Simple interest is calculated only on the principal amount for each year.",
+        "The formula for calculating simple interest is: Simple Interest = Principal × Rate of Interest × Time / 100.",
+        "In this formula: P represents the principal, r represents the rate of interest per year, and t represents the time period in years.",
+        "When the time period is given in months, convert it into years by dividing it by 12.",
+        "When the time period is given in days, convert it into years by dividing it by 365."
+      ]
+    }
+  },
+  "exercise": {
+    "questions": [
+      {
+        "question": "What is the term for the amount of money borrowed or lent?",
+        "options": [
+          "a) Interest",
+          "b) Principal",
+          "c) Amount",
+          "d) Rate of interest"
+        ],
+        "answer": "b) Principal"
+      },
+      {
+        "question": "What is the formula for calculating Simple Interest?",
+        "options": [
+          "a) Simple Interest = Principal × Rate × Time / 100",
+          "b) Simple Interest = Principal × Rate + Time",
+          "c) Simple Interest = Principal × Time / Rate",
+          "d) Simple Interest = Rate × Time / Principal"
+        ],
+        "answer": "a) Simple Interest = Principal × Rate × Time / 100"
+      },
+      {
+        "question": "How is the total amount calculated in an interest transaction?",
+        "options": [
+          "a) By adding the principal and interest",
+          "b) By subtracting the interest from the principal",
+          "c) By multiplying the principal and interest",
+          "d) By dividing the principal by the interest"
+        ],
+        "answer": "a) By adding the principal and interest"
+      },
+      {
+        "question": "What is Compound Interest?",
+        "options": [
+          "a) Interest calculated on the principal only",
+          "b) Interest calculated on the principal and accumulated interest",
+          "c) Interest calculated at a fixed rate",
+          "d) Interest that decreases over time"
+        ],
+        "answer": "b) Interest calculated on the principal and accumulated interest"
+      },
+      {
+        "question": "What does 'time' refer to in the context of interest?",
+        "options": [
+          "a) The duration for which the money is borrowed or deposited",
+          "b) The amount borrowed",
+          "c) The rate of interest per year",
+          "d) The total amount repaid"
+        ],
+        "answer": "a) The duration for which the money is borrowed or deposited"
+      }
+    ],
+    "type": "MCQ"
+  }
+}

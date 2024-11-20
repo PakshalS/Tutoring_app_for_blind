@@ -1,0 +1,180 @@
+ {
+  "name": "Number Series",
+  "sections": {
+    "section1": {
+      "name": "Introduction to Number Series",
+      "subsections": {
+        "subsection1": {
+          "name": "What is Number Series",
+          "content": [
+            "A number series is an order of numbers arranged according to a specific pattern, rather than randomly.",
+            "Identifying the pattern is essential to solving number series problems."
+          ]
+        }
+      }
+    },
+    "section2": {
+      "name": "Scope in Exams",
+      "subsections": {
+        "subsection1": {
+          "name": "Importance in Exams",
+          "content": [
+            "Number series questions frequently appear in pre and mains exams of banks such as State Bank of India.",
+            "Typically, these questions are asked in sets of five and can be solved in very little time."
+          ]
+        }
+      }
+    },
+    "section3": {
+      "name": "Different Types of Number Series",
+      "subsections": {
+        "subsection1": {
+          "name": "Difference Series",
+          "content": [
+            "In this type of series, the pattern can be identified by finding the difference between the terms.",
+            "If a pattern is found in the first difference, such as square, cube, or multiplication, this is called a one-tier series.",
+            "If the pattern requires further differences, it becomes a two-tier series."
+          ]
+        },
+        "subsection2": {
+          "name": "Fibonacci Series",
+          "content": [
+            "In the Fibonacci series, each term is found by adding the previous two terms together.",
+            "For example: 1, 1, 2, 3, 5, 8, 13, 21."
+          ]
+        },
+        "subsection3": {
+          "name": "Prime Number Series",
+          "content": [
+            "In this series, the next term is obtained by adding, multiplying, or dividing by prime numbers.",
+            "For example: 2, 4, 12, 60, 420, 4620."
+          ]
+        },
+        "subsection4": {
+          "name": "Perfect Square Series",
+          "content": [
+            "This type of series is based on the square of a number, and one square number is missing from the series.",
+            "For example: 480, 525, 572, 621, 672, 725."
+          ]
+        },
+        "subsection5": {
+          "name": "Perfect Cube Series",
+          "content": [
+            "This series is based on the cube of a number, with one cube number missing.",
+            "For example: 2197, 3375, 4913, 6859, 9261."
+          ]
+        },
+        "subsection6": {
+          "name": "Ratio Series",
+          "content": [
+            "This type of series follows a ratio between consecutive terms.",
+            "For example: 4096, 5120, 6400, 8000, 10000, where the ratio between terms is 4:5."
+          ]
+        },
+        "subsection7": {
+          "name": "Mixed Series",
+          "content": [
+            "Mixed number series are a combination of different types of number series arranged in an alternating sequence.",
+            "For example: 2, 8, 26, 62, 122, 212 with differences: +6, +18, +36, +60, +90."
+          ]
+        }
+      }
+    },
+    "section4": {
+      "name": "Types of Questions Asked in Exams",
+      "subsections": {
+        "subsection1": {
+          "name": "Missing Number",
+          "content": [
+            "In these questions, one number is missing from a series.",
+            "The goal is to find the missing number by identifying the pattern.",
+            "Example: 4, 5, 9, 16, 26, 39, 55, 74."
+          ]
+        },
+        "subsection2": {
+          "name": "Wrong Number Series",
+          "content": [
+            "In these questions, one number does not follow the pattern and is considered the odd one out.",
+            "Example: 11, 18, 29, 42, 59, 80, 101."
+          ]
+        },
+        "subsection3": {
+          "name": "Coding Decoding Series",
+          "content": [
+            "In these questions, the relationship between numbers is defined, and you need to decode the next number in the series.",
+            "Example: 154, 462, 231, 693, 346.5, 1039.5 with operations: ×3, ÷2, ×3, ÷2, ×3."
+          ]
+        }
+      }
+    },
+    "section5": {
+      "name": "How to Proceed with Number Series",
+      "subsections": {
+        "subsection1": {
+          "name": "Step-by-Step Approach",
+          "content": [
+            "Examine the difference between adjacent numbers to identify patterns.",
+            "If the series is increasing, check if the difference is square, cube, or multiplication.",
+            "If the series is decreasing, check if the difference is division or subtraction.",
+            "Look for alternating increases and decreases in the series to find the pattern."
+          ]
+        }
+      }
+    }
+  },
+  "exercise": {
+    "questions": [
+      {
+        "question": "What is the next number in the Fibonacci series 1, 1, 2, 3, 5, 8, 13?",
+        "options": [
+          "a) 21",
+          "b) 34",
+          "c) 18",
+          "d) 23"
+        ],
+        "answer": "b) 34"
+      },
+      {
+        "question": "What is the missing number in the series: 2, 8, 26, 62, 122, ?",
+        "options": [
+          "a) 212",
+          "b) 202",
+          "c) 132",
+          "d) 142"
+        ],
+        "answer": "a) 212"
+      },
+      {
+        "question": "Which number is the odd one out in the series: 11, 18, 29, 42, 59, 80, 101?",
+        "options": [
+          "a) 59",
+          "b) 42",
+          "c) 80",
+          "d) 29"
+        ],
+        "answer": "c) 80"
+      },
+      {
+        "question": "What is the next term in the series: 4096, 5120, 6400, 8000, 10000?",
+        "options": [
+          "a) 11000",
+          "b) 12000",
+          "c) 12500",
+          "d) 14000"
+        ],
+        "answer": "b) 12000"
+      },
+      {
+        "question": "What is the rule for the following series: 154, 462, 231, 693, 346.5, 1039.5?",
+        "options": [
+          "a) ×3, ÷2, ×3, ÷2, ×3",
+          "b) ×2, ÷3, ×2, ÷3, ×2",
+          "c) ÷2, ×3, ÷2, ×3, ÷2",
+          "d) ×5, ÷3, ×5, ÷3, ×5"
+        ],
+        "answer": "a) ×3, ÷2, ×3, ÷2, ×3"
+      }
+    ],
+    "type": "MCQ"
+  }
+}

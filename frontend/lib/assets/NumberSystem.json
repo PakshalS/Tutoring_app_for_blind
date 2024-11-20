@@ -1,0 +1,94 @@
+ {
+  "name": "Number System",
+  "sections": {
+    "section1": {
+      "name": "Definition",
+      "content": [
+        "A number system, or system of numeration, is a writing system of numbers or symbols in a consistent manner.", 
+        "In simple terms, we can say that a number system deals with writing numbers."
+      ]
+    },
+    "section2": {
+      "name": "Types of Number Systems",
+      "content": [
+        "Number systems can be classified into Binary, Octal, Decimal, and Hexadecimal systems." ,
+        "These are used in computers today, with the Decimal Number System being the most commonly used in mathematics."
+      ]
+    },
+    "section3": {
+      "name": "Decimal Number System",
+      "content": [
+        "The Decimal Number System uses ten digits, which are 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9." 
+        ,"We can form any number using these digits. The base of this system is also ten."
+      ]
+    },
+    "section4": {
+      "name": "Indian System and International System",
+      "content": [
+        "The Indian and International systems both read numbers from left to right but differ in the terms used for number representation and their place value."
+      ]
+    },
+    "section5": {
+      "name": "Types of Numbers",
+      "content": [
+        "Numbers can be classified as Imaginary Numbers, Real Numbers, Rational Numbers, Irrational Numbers, Integers, Natural Numbers, Whole Numbers, and more."
+      ]
+    }
+  },
+  "exercise": {
+    "questions": [
+      {
+        "question": "What does a number system deal with?",
+        "options": [
+          "Writing words",
+          "Writing numbers",
+          "Adding numbers",
+          "Counting numbers"
+        ],
+        "answer": "Writing numbers"
+      },
+      {
+        "question": "What is the purpose of a number system?",
+        "options": [
+          "To count and measure",
+          "To plot graphs",
+          "To create patterns",
+          "To simplify calculations"
+        ],
+        "answer": "To count and measure"
+      },
+      {
+        "question": "What is the base of the Decimal Number System?",
+        "options": [
+          "Two",
+          "Eight",
+          "Ten",
+          "Sixteen"
+        ],
+        "answer": "Ten"
+      },
+      {
+        "question": "Which number system uses the digits 0-1?",
+        "options": [
+          "Binary",
+          "Decimal",
+          "Octal",
+          "Hexadecimal"
+        ],
+        "answer": "Binary"
+      },
+      {
+        "question": "Which of the following is an imaginary number?",
+        "options": [
+          "Two",
+          "Seven i",
+          "Three",
+          "Negative Four"
+        ],
+        "answer": "Seven i"
+      }
+    ]
+    ,
+      "type": "MCQ"
+  }
+}

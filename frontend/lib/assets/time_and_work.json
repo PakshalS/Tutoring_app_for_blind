@@ -1,0 +1,50 @@
+{
+  "name": "Time and Work",
+  "sections": {
+    "section1": {
+      "name": "Basic Concepts of Time and Work",
+      "content": [
+        "If A can do a piece of work in x days, then in one day, A completes 1/x of the work.",
+        "If A is thrice as efficient as B, then A will complete 3 times the work of B in the same amount of time, and B will take 3 times the time that A takes to complete the same work.",
+        "Efficiency is directly proportional to the work done and inversely proportional to the time taken.",
+        "If two people A and B work together, their combined efficiency is the sum of their individual efficiencies."
+      ]
+    },
+    "section2": {
+      "name": "Work and Wages",
+      "content": [
+        "The ratio of wages of people doing the same work is directly proportional to their efficiency."
+      ]
+    }
+  },
+  "exercise": {
+    "questions": [
+      {
+        "question": "A can complete a piece of work in 12 days, while B can complete it in 18 days. If they work together, how many days will they take to complete the work?",
+        "options": ["a) 6 days", "b) 7.2 days", "c) 8 days", "d) 9 days"],
+        "answer": "b) 7.2 days"
+      },
+      {
+        "question": "If A is twice as efficient as B and together they can complete a work in 10 days, in how many days can A complete the work alone?",
+        "options": ["a) 10 days", "b) 15 days", "c) 20 days", "d) 25 days"],
+        "answer": "c) 20 days"
+      },
+      {
+        "question": "A and B can complete a job together in 8 days. If A alone can do it in 12 days, how many days will B take to do the work alone?",
+        "options": ["a) 18 days", "b) 20 days", "c) 24 days", "d) 30 days"],
+        "answer": "c) 24 days"
+      },
+      {
+        "question": "A and B are hired to complete a job for $1,500. A can do the work in 10 days and B in 15 days. What is the share of A in the payment if they work together to complete the job?",
+        "options": ["a) $500", "b) $600", "c) $900", "d) $1,000"],
+        "answer": "c) $900"
+      },
+      {
+        "question": "12 men can complete a work in 36 days. How many men will be required to complete the same work in 24 days?",
+        "options": ["a) 18 men", "b) 16 men", "c) 15 men", "d) 20 men"],
+        "answer": "a) 18 men"
+      }
+    ],
+    "type": "MCQ"
+  }
+}

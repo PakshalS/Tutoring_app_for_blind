@@ -1,0 +1,123 @@
+{
+    "name": "Profit and Loss",
+    "sections": {
+      "section1": {
+        "content": [
+          "In business mathematics, profit and loss are fundamental concepts that quantify the financial performance of a business.",
+          "This chapter explores the mathematical relationships between cost, revenue, and profit."
+        ],
+        "name": "Introduction"
+      },
+      "section2": {
+        "content": [
+          "Let:",
+          "C = Cost price (the amount spent to produce or acquire goods)",
+          "S = Selling price (the amount received from selling goods)",
+          "P = Profit (positive) or Loss (negative)"
+        ],
+        "name": "Basic Definitions"
+      },
+      "section3": {
+        "name": "Fundamental Equations",
+        "subsections": {
+          "subsection1": {
+            "content": [
+              "When S > C, a profit is made: P = S - C"
+            ],
+            "name": "Profit Equation"
+          },
+          "subsection2": {
+            "content": [
+              "When C > S, a loss is incurred: P = S - C (note: P will be negative in this case)"
+            ],
+            "name": "Loss Equation"
+          }
+        }
+      },
+      "section4": {
+        "name": "Formulas",
+        "subsections": {
+          "subsection1": {
+            "content": [
+              "Profit percentage is calculated as a percentage of the cost price:",
+              "Profit % = (P / C) × 100%",
+              "= ((S - C) / C) × 100%"
+            ],
+            "name": "Profit Percentage"
+          },
+          "subsection2": {
+            "content": [
+              "Loss percentage is also calculated as a percentage of the cost price:",
+              "Loss % = (L / C) × 100%",
+              "= ((C - S) / C) × 100%"
+            ],
+            "name": "Loss Percentage"
+          }
+        }
+      },
+      "section5": {
+        "name": "Markup and Margin",
+        "subsections": {
+          "subsection1": {
+            "content": [
+              "Markup is the amount added to the cost price to determine the selling price:",
+              "Markup = S - C",
+              "Markup % = ((S - C) / C) × 100%"
+            ],
+            "name": "Markup"
+          },
+          "subsection2": {
+            "content": [
+              "Margin is the profit expressed as a percentage of the selling price:",
+              "Margin = (P / S) × 100%",
+              "= ((S - C) / S) × 100%"
+            ],
+            "name": "Margin"
+          }
+        }
+      },
+      "section6": {
+        "content": [
+          "The break-even point occurs when total revenue equals total cost (i.e., no profit or loss):",
+          "Let Q = Quantity sold",
+          "F = Fixed costs",
+          "V = Variable cost per unit",
+          "P = Price per unit",
+          "Break-even quantity: Q = F / (P - V)"
+        ],
+        "name": "Break-Even Point"
+      }
+    },
+    "exercise": {
+      "questions": [
+        {
+          "answer": {
+            "a": "Profit = Rs.100 - Rs.80 = Rs.20",
+            "b": "Profit Percentage = (20 / 80) × 100% = 25%",
+            "c": "Markup Percentage = (20 / 80) × 100% = 25%"
+          },
+          "options": [
+            "a) The profit",
+            "b) The profit percentage",
+            "c) The markup percentage"
+          ],
+          "question": "1. A retailer buys a product for Rs.80 and sells it for Rs.100. Calculate:"
+        },
+        {
+          "answer": "Rs.170",
+          "options": [
+            "a) Rs.170",
+            "b) Rs.160",
+            "c) Rs.150",
+            "d) Rs.180"
+          ],
+          "question": "2. A company incurs a loss of 15% on a product that cost Rs.200. What was the selling price?"
+        },
+        {
+          "answer": "Break-even quantity = 10,000 / (15 - 5) = 1,000 units",
+          "question": "3. If the fixed costs for a business are Rs.10,000 per month, the variable cost per unit is Rs.5, and the selling price per unit is Rs.15, calculate the break-even quantity."
+        }
+      ],
+      "type": "MCQ"
+    } 
+  }

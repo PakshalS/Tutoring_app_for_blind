@@ -1,0 +1,94 @@
+ {
+  "name": "Permutation and Combination",
+  "sections": {
+    "section1": {
+      "name": "Factorial",
+      "content": [
+        "A factorial is defined as the product of all natural numbers up to a given number. It is represented as 'n factorial' and written as n!. This means n! equals n times (n minus 1) times (n minus 2), and so on, down to 1.",
+        "For example: 4! = 4 × 3 × 2 × 1 = 24, 5! = 5 × 4 × 3 × 2 × 1 = 120.",
+        "Factorials can be expressed in terms of smaller factorials. For example, 5! = 5 × 4!, and 4! = 4 × 3!, and so on, until we reach 1!"
+      ]
+    },
+    "section2": {
+      "name": "Permutation",
+      "content": [
+        "Permutation refers to the number of different arrangements that can be made by taking some or all of a given set of things at a time. The order of arrangement matters.",
+        "For example, arranging two numbers, A and B, gives two different permutations: AB and BA.",
+        "The number of permutations of 'n' things taken 'n' at a time is denoted as nPn = n!, and the number of permutations of 'n' things taken 0 at a time is 1.",
+        "The formula for permutation is: nPr = n! / (n - r)!"
+      ]
+    },
+    "section3": {
+      "name": "Combination",
+      "content": [
+        "Combination refers to the number of ways in which a set of things can be selected. In combination, the order of selection does not matter.",
+        "For example, if selecting two numbers A and B, AB and BA are counted as one combination.",
+        "The formula for combination is: nCr = n! / (r! × (n - r)!)",
+        "The relationship between combinations is: nCr = nC(n - r). The sum of all combinations from nC0 to nCn is equal to 2^n."
+      ]
+    },
+    "section4": {
+      "name": "Permutation vs Combination",
+      "content": [
+        "Permutation is used when we want to arrange 'r' things out of 'n' things, and combination is used when we want to select 'r' things from 'n'.",
+        "In permutation, the order of arrangement matters, whereas in combination, the order does not matter.",
+        "Formula for permutation: nPr = n! / (n - r)!, Formula for combination: nCr = n! / (r! × (n - r)!)"
+      ]
+    }
+  },
+  "exercise": {
+    "questions": [
+      {
+        "question": "What is the value of 5!?",
+        "options": [
+          "a) 120",
+          "b) 60",
+          "c) 24",
+          "d) 100"
+        ],
+        "answer": "a) 120"
+      },
+      {
+        "question": "What is the formula for the number of permutations of 'n' things taken 'r' at a time?",
+        "options": [
+          "a) nPr = n! / (n - r)!",
+          "b) nPr = n! × (n - r)!",
+          "c) nPr = n × r!",
+          "d) nPr = r × n!"
+        ],
+        "answer": "a) nPr = n! / (n - r)!"
+      },
+      {
+        "question": "How many permutations can be made from 3 objects A, B, and C?",
+        "options": [
+          "a) 3",
+          "b) 6",
+          "c) 9",
+          "d) 4"
+        ],
+        "answer": "b) 6"
+      },
+      {
+        "question": "What is the formula for combination?",
+        "options": [
+          "a) nCr = n! / (r! × (n - r)!)",
+          "b) nCr = n! × (r! × (n - r)!)",
+          "c) nCr = (n - r)! / r!",
+          "d) nCr = n × r!"
+        ],
+        "answer": "a) nCr = n! / (r! × (n - r)!)"
+      },
+      {
+        "question": "What is the main difference between permutation and combination?",
+        "options": [
+          "a) Permutation considers the order, while combination does not",
+          "b) Permutation does not consider the order, while combination does",
+          "c) Both consider the order",
+          "d) Neither considers the order"
+        ],
+        "answer": "a) Permutation considers the order, while combination does not"
+      }
+    ],
+      "type": "MCQ"
+  }
+}

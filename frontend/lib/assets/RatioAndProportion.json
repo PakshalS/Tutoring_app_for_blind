@@ -1,0 +1,86 @@
+{
+  "name": "Ratio and Proportion",
+  "sections": {
+    "section1": {
+      "name": "Ratio",
+      "content": [
+        "The ratio of two quantities a and b is the fraction a/b and is written as a: b.",
+        "In the ratio a: b, 'a' is called the first term or antecedent, and 'b' is the second term or consequent.",
+        "For example, ratio 5:9 represents 5/9, with antecedent = 5 and consequent = 9."
+      ]
+    },
+    "section2": {
+      "name": "Compounded Ratio",
+      "content": [
+        "If two or more ratios are given, the compounded ratio is calculated by multiplying antecedents together and consequents together.",
+        "Formula: (a: b), (c: d), (e: f) => ace: bdf"
+      ]
+    },
+    "section3": {
+      "name": "Proportion",
+      "content": [
+        "The equality of two ratios is called proportion.",
+        "If a: b = c: d, we write it as a: b ∷ c: d.",
+        "In proportion, a and d are extremes, while b and c are means.",
+        "Product of means = Product of extremes: b × c = a × d."
+      ]
+    },
+    "section4": {
+      "name": "Third Proportion",
+      "content": [
+        "If a: b = b: c, then c is called the third proportion to a and b."
+      ]
+    },
+    "section5": {
+      "name": "Fourth Proportion",
+      "content": [
+        "If a: b = c: d, then d is called the fourth proportion to a, b, and c."
+      ]
+    },
+    "section6": {
+      "name": "Mean Proportion",
+      "content": ["The mean proportion of a and b is given by √(a × b)."]
+    },
+    "section7": {
+      "name": "Important Questions",
+      "content": [
+        "These questions involve applying ratio and proportion concepts in real-life problems."
+      ]
+    }
+  },
+  "exercise": {
+    "questions": [
+      {
+        "question": "What is the compounded ratio of 17:23, 115:153, and 18:25?",
+        "options": ["a) 1:3", "b) 2:5", "c) 5:7", "d) 3:4"],
+        "answer": "b) 2:5"
+      },
+      {
+        "question": "In the proportion 3:27 ∷ 5:?, what is the missing term?",
+        "options": ["a) 15", "b) 45", "c) 25", "d) 50"],
+        "answer": "b) 45"
+      },
+      {
+        "question": "What is the formula for finding the third proportion in a ratio a: b = b: c?",
+        "options": [
+          "a) a × b = c",
+          "b) c = (b × b) / a",
+          "c) c = b² / a",
+          "d) c = a × b"
+        ],
+        "answer": "c) c = b² / a"
+      },
+      {
+        "question": "If a: b = 3:4 and c: d = 5:6, what is the fourth proportion to a, b, and c?",
+        "options": ["a) 12", "b) 15", "c) 10", "d) 20"],
+        "answer": "b) 15"
+      },
+      {
+        "question": "The mean proportional between 14 and 15 is:",
+        "options": ["a) 14.0", "b) 14.5", "c) 15.0", "d) 13.5"],
+        "answer": "b) 14.5"
+      }
+    ],
+    "type": "MCQ"
+  }
+}

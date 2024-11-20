@@ -1,0 +1,84 @@
+{
+  "name": "Time-Speed and Distance",
+  "sections": {
+    "section1": {
+      "name": "Speed, Time, and Distance",
+      "content": [
+        "Speed is defined as the rate of travel to cover a certain distance. It is expressed in m/s, km/hr, etc.",
+        "Time is defined as the duration for which traveling has been done to cover a certain distance. It is expressed in seconds, hours, etc.",
+        "Distance is defined as the length of the path for which traveling has been done. It is expressed in meters, kilometers, etc.",
+        "Formula for Speed: Speed = Distance / Time.",
+        "Formula for Time: Time = Distance / Speed.",
+        "Formula for Distance: Distance = Speed × Time."
+      ]
+    },
+    "section2": {
+      "name": "Ratios of Speed, Distance, and Time",
+      "content": [
+        "If the ratio of the speeds of A and B is a : b, then the ratio of the times taken by them to cover the same distance will be b : a."
+      ]
+    },
+    "section3": {
+      "name": "Average Speed",
+      "content": [
+        "The formula for average speed when the total distance and total time are known is: Average Speed = Total Distance / Total Time.",
+        "In case of two different speeds for the same distance, the average speed is given by: Average Speed = (2 × Speed1 × Speed2) / (Speed1 + Speed2)."
+      ]
+    }
+  },
+  "exercise": {
+    "questions": [
+      {
+        "question": "Convert 54 km/hr into m/sec.",
+        "options": ["a) 10 m/sec", "b) 15 m/sec", "c) 20 m/sec", "d) 30 m/sec"],
+        "answer": "b) 15 m/sec"
+      },
+      {
+        "question": "A car goes 20 meters in a second. Find its speed in km/hr.",
+        "options": ["a) 60 km/hr", "b) 72 km/hr", "c) 80 km/hr", "d) 90 km/hr"],
+        "answer": "b) 72 km/hr"
+      },
+      {
+        "question": "The speed of three cars is in the ratio 5: 4: 6. The ratio between the time taken by them to travel the same distance is?",
+        "options": [
+          "a) 10: 12: 15",
+          "b) 12: 15: 10",
+          "c) 8: 9: 7",
+          "d) 5: 6: 7"
+        ],
+        "answer": "b) 12: 15: 10"
+      },
+      {
+        "question": "A man traveled 12 km at a speed of 4 km/hr and further 10 km at a speed of 5 km/hr. What is his average speed?",
+        "options": ["a) 4 km/hr", "b) 4.4 km/hr", "c) 5 km/hr", "d) 5.4 km/hr"],
+        "answer": "b) 4.4 km/hr"
+      },
+      {
+        "question": "The speeds of Shaan and Rohan are 50 km/h and 30 km/h respectively. Shaan starts 3 hours earlier than Rohan to meet at a point. The distance between them is 710 km. What is the distance between the meeting point and Shaan's starting place?",
+        "options": ["a) 480 km", "b) 500 km", "c) 600 km", "d) 520 km"],
+        "answer": "b) 500 km"
+      },
+      {
+        "question": "The distance between A and B is 370 km. Car 1 departs from A at 10 am at 80 km/hr, and car 2 departs from B at 1 pm at 50 km/hr. When will the two cars meet?",
+        "options": ["a) 2:00 pm", "b) 3:00 pm", "c) 4:00 pm", "d) 1:00 pm"],
+        "answer": "a) 2:00 pm"
+      },
+      {
+        "question": "A man takes 5 hours 45 minutes to walk to a certain place and ride back. He would have saved 2 hours had he ridden both ways. What is the time he would take to walk both ways?",
+        "options": [
+          "a) 7 hours",
+          "b) 7 hours 45 minutes",
+          "c) 8 hours",
+          "d) 6 hours 30 minutes"
+        ],
+        "answer": "b) 7 hours 45 minutes"
+      },
+      {
+        "question": "A cyclist covers a distance of 750 meters in 2 min 30 sec. What is his speed in km/hr?",
+        "options": ["a) 10 km/hr", "b) 18 km/hr", "c) 20 km/hr", "d) 15 km/hr"],
+        "answer": "b) 18 km/hr"
+      }
+    ],
+    "type": "MCQ"
+  }
+}

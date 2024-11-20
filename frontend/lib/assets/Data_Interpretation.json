@@ -1,0 +1,88 @@
+ {
+  "name": "Data Interpretation",
+  "sections": {
+    "section1": {
+      "name": "Introduction to Data Interpretation",
+      "content": [
+        "Data interpretation refers to the process of reviewing provided data and using this information to calculate the required values.",
+        "The data can be presented in various forms, such as tables, pie charts, line graphs, bar graphs, caselets, or a combination of these."
+      ]
+    },
+    "section2": {
+      "name": "Tabular Data Interpretation",
+      "content": [
+        "In tabular data interpretation, information is presented in rows and columns, forming a table.",
+        "You need to analyze the information in the table to answer the related questions."
+      ]
+    },
+    "section3": {
+      "name": "Pie Chart",
+      "content": [
+        "A pie chart is a circular chart divided into sectors, where each sector represents a proportion of the total.",
+        "The total value of the pie chart is distributed over an angle of 360 degrees or 100%."
+      ]
+    },
+    "section4": {
+      "name": "Bar Graph",
+      "content": [
+        "A bar graph is a visual representation that uses rectangular bars to compare data across categories.",
+        "Each bar's height or length corresponds to the value it represents."
+      ]
+    }
+  },
+  "exercise": {
+    "questions": [
+      {
+        "question": "What is data interpretation?",
+        "options": [
+          "a) The process of creating data",
+          "b) The process of analyzing and calculating values from provided data",
+          "c) The method of storing data",
+          "d) The process of deleting unnecessary data"
+        ],
+        "answer": "b) The process of analyzing and calculating values from provided data"
+      },
+      {
+        "question": "How is data presented in tabular data interpretation?",
+        "options": [
+          "a) Using rows and columns",
+          "b) Using circular charts",
+          "c) Using line graphs",
+          "d) Using descriptive paragraphs"
+        ],
+        "answer": "a) Using rows and columns"
+      },
+      {
+        "question": "What does a pie chart represent?",
+        "options": [
+          "a) Trends over time",
+          "b) A proportional distribution of a total value",
+          "c) A comparison of categories",
+          "d) Numerical data arranged in rows and columns"
+        ],
+        "answer": "b) A proportional distribution of a total value"
+      },
+      {
+        "question": "What is the total angle of a pie chart?",
+        "options": [
+          "a) 90 degrees",
+          "b) 180 degrees",
+          "c) 270 degrees",
+          "d) 360 degrees"
+        ],
+        "answer": "d) 360 degrees"
+      },
+      {
+        "question": "What is the purpose of a bar graph?",
+        "options": [
+          "a) To represent proportions of a total value",
+          "b) To compare data across categories",
+          "c) To track changes over time",
+          "d) To solve caselet-based problems"
+        ],
+        "answer": "b) To compare data across categories"
+      }
+    ],
+    "type": "MCQ"
+  }
+}

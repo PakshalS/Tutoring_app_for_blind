@@ -1,0 +1,103 @@
+{
+  "name": "Mixture and Alligation",
+  "sections": {
+    "section1": {
+      "content": [
+        "It helps to find the ratio in which two or more ingredients with given prices must be mixed to produce a mixture at a desired price.",
+        "The cost price of a unit quantity of the mixture is called the mean price."
+      ],
+      "name": "Introduction"
+    },
+    "section2": {
+      "content": [
+        "If two ingredients A and B are mixed at prices x and y respectively, and the mean price is M, the required ratio is:",
+        "(y - M) / (M - x)"
+      ],
+      "name": "Basic Formula"
+    },
+    "section3": {
+      "content": [
+        "729 Litres of mixtures containing milk and water in the ratio 7:2. How much more water should be added so that the new mixture contains milk and water in the ratio 7:3?",
+        "Water in mixture: 729 × (2/9) = 162 litres",
+        "Required Ratio: 9:1",
+        "Amount of water to add: 729 ÷ 9 × 1 = 81 litres"
+      ],
+      "name": "Worked Example 1"
+    },
+    "section4": {
+      "content": [
+        "Take two ingredients such that one is lower than the mean value and the other is higher.",
+        "Calculate the ratio of ingredients.",
+        "Repeat for all possible pairs.",
+        "Add values for common ingredients to find the final ratio.",
+        "Three types of Rice of Rs. 1.27, Rs. 1.29, and Rs. 1.32 per kg are mixed together to be sold at Rs. 1.30 per kg. In what ratio should this rice be mixed?",
+        "Final ratio: 2:1:5"
+      ],
+      "name": "Mixture of More Than Two Elements"
+    },
+    "section5": {
+      "content": [
+        "How much does a shop owner mix 4 types of rice worth Rs. 95, Rs. 60, Rs. 90, and Rs. 50 per kg to make a mixture worth Rs. 80 per kg?",
+        "Ratio: 4:4:5:1"
+      ],
+      "name": "Mixture Containing Four Ingredients"
+    },
+    "section6": {
+      "content": [
+        "If a container initially contains 'a' units of liquid and 'b' units are replaced by water after k operations, the quantity of pure liquid left can be calculated.",
+        "8 litres are drawn from a cask full of wine and replaced with water. This operation is repeated 3 more times. The ratio of wine left to water is 16:65. How much wine did the cask originally hold?",
+        "Initial Wine: Let x = initial quantity of wine.",
+        "Process: Solve for x after 4 replacement cycles."
+      ],
+      "name": "Concept of Replacement"
+    }
+  },
+  "exercise": {
+    "questions": [
+      {
+        "question": "In 330 litres of mixture of milk and water, water is only 24%. The milkman sold 80 litres of this mixture and then he added 60 litres of pure milk and 26 litres of pure water in the remaining mixture. What is the percentage of water in the final mixture?",
+        "options": [
+          "A. 39.70%",
+          "B. 25.59%",
+          "C. 34.68%",
+          "D. 37.34%",
+          "E. 16.89%"
+        ],
+        "answer": "B"
+       
+      },
+      {
+        "question": "A paint maker has three different qualities of paint. 806 barrels of 1st quality, 930 barrels of 2nd quality, and 992 barrels of 3rd quality. Find the least possible number of buckets of equal size in which different paints of different qualities can be filled without mixing?",
+        "options": [
+          "A. 34",
+          "B. 46",
+          "C. 26",
+          "D. 44",
+          "E. None of these"
+        ],
+        "answer": "D"
+      }
+      ,{
+       "question": "Two vessels A and B contain milk and water mixed in the ratio 4:3 and 2:3. The ratio in which these mixtures should be mixed to form a new mixture containing half milk and half water is?",
+        "options": [
+          "A. 7:5",
+          "B. 6:5",
+          "C. 5:6",
+          "D. 4:3"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "A milkman makes 20% profit by selling milk mixed with water at Rs. 9 per litre. If the cost price of 1 litre of pure milk is Rs. 10, then the ratio of milk and water in the said mixture is?",
+        "options": [
+          "A. 3:1",
+          "B. 4:1",
+          "C. 3:2",
+          "D. 4:3"
+        ],
+        "answer": "A"
+      }
+    ],
+    "type": "MCQ"
+  }
+}
