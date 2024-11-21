@@ -27,7 +27,7 @@ class ExerciseWidget extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: 4.0),
                   child: Text("- Q: ${question['question']}"),
                 );
-              }).toList(),
+              }),
           ],
         ),
       ),

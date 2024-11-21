@@ -26,7 +26,7 @@
 //for data population
 
 import 'package:flutter/material.dart';
-import 'screens/home_page.dart';
+import 'package:frontend/screens/auth/login_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const LoginPage(),
     );
   }
 }

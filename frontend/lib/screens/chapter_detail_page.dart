@@ -49,7 +49,7 @@ class ChapterDetailPage extends StatelessWidget {
                   if (sections != null)
                     ...sections.entries.map((entry) {
                       return SectionWidget(section: entry.value);
-                    }).toList(),
+                    }),
                   if (exercises != null) ExerciseWidget(exercises: exercises),
                 ],
               ),
