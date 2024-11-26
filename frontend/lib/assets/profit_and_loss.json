@@ -112,11 +112,8 @@
             "d) Rs.180"
           ],
           "question": "2. A company incurs a loss of 15% on a product that cost Rs.200. What was the selling price?"
-        },
-        {
-          "answer": "Break-even quantity = 10,000 / (15 - 5) = 1,000 units",
-          "question": "3. If the fixed costs for a business are Rs.10,000 per month, the variable cost per unit is Rs.5, and the selling price per unit is Rs.15, calculate the break-even quantity."
         }
+       
       ],
       "type": "MCQ"
     } 
