@@ -1,0 +1,14 @@
+{
+    "type": "service_account",
+    "project_id": "syllabus-voice-assistant-lpqy",
+    "private_key_id": "94479eeb2e50ea516aa0d907dd585916387e3221",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDQSoGTlq2MRbc9\n+u8NLw2XL3q//g1s7+9ZZDEWnlYc3jFlLm+50JaaVYWF0nunhB7HeU6Od94WVjwA\nAE87sliJVNRFDKEoxiwG7KrGkNsrQ4KmpASntZEQ3ItaI46imhaoOpxPHhR5t+f2\nPGTiSvA033WrvAvQQ1IdQ8rMy7Zqi/P3GmKypvICdUZf74y1ZJlSzlWJ4R+i88Bw\neheazVf3oOhJBcXTqGpF8eMSd8ZoWwQaGbe/KtVNG/DuaqRwQLaoFcCOjX6TiT9S\nWXUCKaFhFcovTeM2WisThbpE0ay2ZvvDUotPwXtptdcKIMGqmNRbTf84shTF3uTV\njwY/kadHAgMBAAECggEALIOfyaDsGgxUKwTTzed+ag8Vlq5+xAdLCbml3AWetbCu\nsccIzZdMeFNKo9zl3FkaEttT9JKdffyT+hQW2tU0orTkYJVgY8xmYFx36tPOYyKc\na2ymKgldpVLc3Ti4JPv1V6KfATGWgqTRCAjELrCBQWt4RGl9xNZ+WA7C6p2msIIx\nuIGVZ3w89DNcUcC1jJ50qDv9NQM/Pl6l+nH6Et0QvZn04RhFSHE+Z5efW8FxHC2R\nXDeyfrRmdUB1HfGbO5EhDgNT6tzxVqMYo5x14Ys+bOUZkBvRMXtYfayxQSA6cjUp\n/pmzTxDE48zoG7PCtCDLjVVeZp8c3Befd2GyIDcR8QKBgQDsn9cN7fpCSdoxLA7P\nNAGlj7Cb5x0Too0QOgD6iSfZzZpNVxeSHh2iBRaSZ+jDRvL6J5LKXzfy/CfQzA51\nvP54GnKhghLqSbhVeJBg2jnTuB90D+ly0bFRjioGs8Noq8gkaWM2LSoEMDshceWu\nGqW2i56J2ijfFs8UrR+i4571hQKBgQDhWLzqz2RVo8Nk8mydiAoiinq7s4ADDWq9\nWlXKjBZiXp3mmKPp7TT4aya2VtTRYpKr21TVND+OiWpgbbAz3qTS6YgI5HiZ/6xM\nPvOjkG3ZIs+wSJodm3Jh0ZeGt01xJLEdiuzZMnSXo5q73wFPlsIZ3GPUV2FDhDWo\nCbT/0cgtWwKBgCh3jYfMUyhTCQWvyziUZFO0JzgCZm6dNhK4WMKAAli1WNYxNs6+\nZ8L1q86OBriewZ8WdXw2nJLpnMWQoEhycfKIU2JbpHB8+xFi9Q4bRBh5PKfUsM/6\nHKEd9wH+bETSXAAeJeF2B+F/fh1SJT2JQR3e8tYQgTzl4bRfhzGMS/shAoGAZzgh\nWKDkgYHAp4WPkNzWX5n0u/NtiHhl0xQExgFC444ZX529PxJjOALEubKuSraPHl8Z\nzYrgLebtrfuwQSITd3R21jPotglxn38aVGp8loAmh8XJqhQg4YOCl7dwpom7AyA2\newpsc2UCJFnynMUeZYAYzhO0PpvZg/3mRWOPAI8CgYBwB8EZc8pwPtjH2QvUUAln\n13eCnMKu+vJw/Wbp/rSkaOSPEfXSJtYxlQBrP1HnnsvSJ4EQKaST3LNvWVPQ1+i4\nqPAisDFYEAbV0RHEAnXutoju/c3JP1MCVz+DBrqeiNXKxTXOUOp6sO01ZLs+WNyB\nAlAsMqn7ipYeQel52bCYzA==\n-----END PRIVATE KEY-----\n",
+    "client_email": "dialogflow-access@syllabus-voice-assistant-lpqy.iam.gserviceaccount.com",
+    "client_id": "112176106757548654384",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-access%40syllabus-voice-assistant-lpqy.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+  

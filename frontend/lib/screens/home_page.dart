@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'chapter_list_page.dart';
 import '../services/auth_service.dart';
 import '../screens/auth/login_page.dart';
+// import 'chatbot_screen.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -42,6 +43,16 @@ class HomePage extends StatelessWidget {
               },
               child: const Text("View Chapters"),
             ),
+            // ElevatedButton(
+            //   onPressed: () {
+            //     Navigator.push(
+            //       context,
+            //       MaterialPageRoute(
+            //           builder: (context) => const ChatbotScreen()),
+            //     );
+            //   },
+            //   child: const Text("View Chapters"),
+            // ),
           ],
         ),
       ),

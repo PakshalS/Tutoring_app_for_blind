@@ -95,7 +95,7 @@ class ExerciseWidget extends StatelessWidget {
                     ],
                   ),
                 );
-              }).toList(),
+              }),
 
             // Fallback for No Questions
             if (questions == null || questions.isEmpty)

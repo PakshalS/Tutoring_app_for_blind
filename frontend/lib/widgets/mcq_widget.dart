@@ -61,7 +61,7 @@ class _MCQWidgetState extends State<MCQWidget> {
                   style: const TextStyle(fontSize: 16),
                 ),
               );
-            }).toList(),
+            }),
 
             const SizedBox(height: 10),
 

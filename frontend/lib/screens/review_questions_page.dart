@@ -76,7 +76,7 @@ class ReviewQuestionsPage extends StatelessWidget {
                     ),
                   ),
                 );
-              }).toList(),
+              }),
             ],
           ),
         ),
