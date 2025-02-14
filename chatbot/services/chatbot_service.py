@@ -2,13 +2,24 @@ from langchain.chains import RetrievalQA
 from langchain_community.llms import HuggingFacePipeline
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 from .rag_service import get_vector_store
+import os
 
 # Load model once to avoid repeated initialization
 MODEL_NAME = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+MODEL_DIR = "models/tinyllama"
 
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-model = AutoModelForCausalLM.from_pretrained(MODEL_NAME)
-hf_pipeline = pipeline("text-generation", model=model, tokenizer=tokenizer, max_new_tokens=200)
+
+# Load model from cache if available
+if not os.path.exists(MODEL_DIR):
+    print("Downloading model for the first time...")
+    os.makedirs(MODEL_DIR, exist_ok=True)
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, cache_dir=MODEL_DIR)
+    model = AutoModelForCausalLM.from_pretrained(MODEL_NAME, cache_dir=MODEL_DIR)
+else:
+    print("Loading cached model...")
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR)
+    model = AutoModelForCausalLM.from_pretrained(MODEL_DIR)
+hf_pipeline = pipeline("text-generation", model=model, tokenizer=tokenizer, max_new_tokens=150)
 
 llm = HuggingFacePipeline(pipeline=hf_pipeline)
 

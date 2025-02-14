@@ -5,6 +5,7 @@ from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.schema import Document
 from dotenv import load_dotenv
+FAISS_INDEX_PATH = "embeddings/faiss_index"
 
 load_dotenv()
 def load_json_data(json_path="data/knowledge_base.json"):
@@ -70,21 +71,30 @@ def format_response(response_text):
     ).strip()
 
 # Process and embed JSON data
-def embed_json_data():
-    """Embeds JSON text into FAISS index."""
-    documents = load_json_data()
 
+def embed_json_data():
+    """Embeds JSON text into FAISS index if not already created."""
+    if os.path.exists(FAISS_INDEX_PATH):
+        print("FAISS index already exists. Skipping embedding process.")
+        return "FAISS index already exists."
+
+    print("Creating FAISS index...")
+    documents = load_json_data()
     text_splitter = CharacterTextSplitter(chunk_size=400, chunk_overlap=50)
     chunks = text_splitter.split_documents(documents)
 
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     vector_store = FAISS.from_documents(chunks, embeddings)
 
-    vector_store.save_local("embeddings/faiss_index")
-
+    vector_store.save_local(FAISS_INDEX_PATH)
     return "Embedding process completed."
 
 # Load FAISS vector store with metadata
 def get_vector_store():
+    """Loads FAISS vector store (ensuring index exists)."""
+    if not os.path.exists(FAISS_INDEX_PATH):
+        print("FAISS index missing! Creating it now...")
+        embed_json_data()
+    
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-    return FAISS.load_local("embeddings/faiss_index", embeddings, allow_dangerous_deserialization=True)
+    return FAISS.load_local(FAISS_INDEX_PATH, embeddings, allow_dangerous_deserialization=True)
