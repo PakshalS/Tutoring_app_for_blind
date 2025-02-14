@@ -1,0 +1,1506 @@
+{
+  "subjects": [
+    {
+      "id": "quantitativeAptitude",
+      "data": {
+        "name": "Quantitative Aptitude"
+      }
+    }
+  ],
+  "subjects/quantitativeAptitude/chapters": [
+    {
+      "id": "DataInterpretation",
+      "data": {
+        "name": "Data Interpretation",
+        "exercise": {
+          "questions": [
+            {
+              "question": "What is data interpretation?",
+              "answer": "b) The process of analyzing and calculating values from provided data",
+              "options": [
+                "a) The process of creating data",
+                "b) The process of analyzing and calculating values from provided data",
+                "c) The method of storing data",
+                "d) The process of deleting unnecessary data"
+              ]
+            },
+            {
+              "question": "How is data presented in tabular data interpretation?",
+              "answer": "a) Using rows and columns",
+              "options": [
+                "a) Using rows and columns",
+                "b) Using circular charts",
+                "c) Using line graphs",
+                "d) Using descriptive paragraphs"
+              ]
+            },
+            {
+              "question": "What does a pie chart represent?",
+              "answer": "b) A proportional distribution of a total value",
+              "options": [
+                "a) Trends over time",
+                "b) A proportional distribution of a total value",
+                "c) A comparison of categories",
+                "d) Numerical data arranged in rows and columns"
+              ]
+            },
+            {
+              "question": "What is the total angle of a pie chart?",
+              "answer": "d) 360 degrees",
+              "options": [
+                "a) 90 degrees",
+                "b) 180 degrees",
+                "c) 270 degrees",
+                "d) 360 degrees"
+              ]
+            },
+            {
+              "question": "What is the purpose of a bar graph?",
+              "answer": "b) To compare data across categories",
+              "options": [
+                "a) To represent proportions of a total value",
+                "b) To compare data across categories",
+                "c) To track changes over time",
+                "d) To solve caselet-based problems"
+              ]
+            }
+          ],
+          "type": "MCQ"
+        },
+        "sections": {
+          "section1": {
+            "name": "Introduction to Data Interpretation",
+            "content": [
+              "Data interpretation refers to the process of reviewing provided data and using this information to calculate the required values.",
+              "The data can be presented in various forms, such as tables, pie charts, line graphs, bar graphs, caselets, or a combination of these."
+            ]
+          },
+          "section2": {
+            "name": "Tabular Data Interpretation",
+            "content": [
+              "In tabular data interpretation, information is presented in rows and columns, forming a table.",
+              "You need to analyze the information in the table to answer the related questions."
+            ]
+          },
+          "section3": {
+            "name": "Pie Chart",
+            "content": [
+              "A pie chart is a circular chart divided into sectors, where each sector represents a proportion of the total.",
+              "The total value of the pie chart is distributed over an angle of 360 degrees or 100%."
+            ]
+          },
+          "section4": {
+            "name": "Bar Graph",
+            "content": [
+              "A bar graph is a visual representation that uses rectangular bars to compare data across categories.",
+              "Each bar's height or length corresponds to the value it represents."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "Mensuration",
+      "data": {
+        "name": "Mensuration",
+        "exercise": {
+          "questions": [
+            {
+              "question": "The area of an equilateral triangle is 49√3 m². Find the height and side.",
+              "answer": "b) 14 m, 7√3 m",
+              "options": [
+                "a) 10 m, 7 m",
+                "b) 14 m, 7√3 m",
+                "c) 7 m, 7 m",
+                "d) 7√3 m, 14 m"
+              ]
+            },
+            {
+              "question": "The area of a square is 1352 m². Find the perimeter and diagonal length.",
+              "answer": "b) 104√2 m, 52 m",
+              "options": [
+                "a) 24 m, 26 m",
+                "b) 104√2 m, 52 m",
+                "c) 26 m, 104 m",
+                "d) 16 m, 16√2 m"
+              ]
+            },
+            {
+              "question": "In a rectangle, the diagonal is 9 times its length. Find the ratio of length to breadth.",
+              "answer": "a) 1:4√5",
+              "options": [
+                "a) 1:4√5",
+                "b) 1:3√3",
+                "c) 2:3",
+                "d) 5:7"
+              ]
+            }
+          ],
+          "type": "MCQ"
+        },
+        "sections": {
+          "section14": {
+            "name": "Pyramid",
+            "content": [
+              "Formulae:",
+              "• Volume of a pyramid = 1/3 × Base area × height",
+              "• Lateral Surface Area = ½ × Perimeter of the base × Slant height",
+              "• Total Surface Area = LSA + Area of the base"
+            ]
+          },
+          "section1": {
+            "name": "Triangle",
+            "content": [
+              "Perimeter = a + b + c",
+              "Area of Triangle = ½ × base × height",
+              "Properties of Equilateral Triangle:",
+              "• All three sides are equal.",
+              "• All three angles are 60°.",
+              "Formulae:",
+              "• Perimeter = 3 × side = 3a",
+              "• Area = (√3/4)a²",
+              "• Height = (√3/2)a"
+            ]
+          },
+          "section13": {
+            "name": "Prism",
+            "content": [
+              "Formulae:",
+              "• Volume = Base area × height",
+              "• Lateral Surface Area = Perimeter of the base × height",
+              "• Total Surface Area = LSA + 2 × (Area of base)"
+            ]
+          },
+          "section2": {
+            "name": "Square",
+            "content": [
+              "Properties:",
+              "• Opposite sides are parallel and equal in length.",
+              "• All four angles are 90°.",
+              "Formulae:",
+              "• Perimeter = 4 × side",
+              "• Area = (side)²",
+              "• Diagonal = √2 × side"
+            ]
+          },
+          "section12": {
+            "name": "Hemisphere",
+            "content": [
+              "Formulae:",
+              "• Volume = 2/3πr³",
+              "• Curved Surface Area = 2πr²",
+              "• Total Surface Area = 3πr²"
+            ]
+          },
+          "section3": {
+            "name": "Rectangle",
+            "content": [
+              "Properties:",
+              "• Opposite sides are equal in length and parallel.",
+              "• All four angles are 90°.",
+              "Formulae:",
+              "• Area = length × breadth",
+              "• Perimeter = 2(length + breadth)",
+              "• Diagonal = √(length² + breadth²)"
+            ]
+          },
+          "section11": {
+            "name": "Sphere",
+            "content": [
+              "Formulae:",
+              "• Volume = 4/3πr³",
+              "• Curved Surface Area = Total Surface Area = 4πr²"
+            ]
+          },
+          "section4": {
+            "name": "Circle",
+            "content": [
+              "Properties:",
+              "• A circle is a locus of points equidistant from a fixed point called the center.",
+              "Formulae:",
+              "• Circumference = 2πr",
+              "• Area = πr²",
+              "• Diameter = 2r"
+            ]
+          },
+          "section10": {
+            "name": "Cone",
+            "content": [
+              "Formulae:",
+              "• Curved Surface Area = πrl",
+              "• Total Surface Area = πr(r + l)",
+              "• Volume = (1/3)πr²h"
+            ]
+          },
+          "section5": {
+            "name": "Parallelogram",
+            "content": [
+              "In a parallelogram, the opposite sides are parallel and equal. But all 4 sides are not equal.",
+              "Formulae:",
+              "• Area of parallelogram = l × h",
+              "• Perimeter of parallelogram = 2(l + b)"
+            ]
+          },
+          "section6": {
+            "name": "Rhombus",
+            "content": [
+              "A rhombus is a parallelogram where all 4 sides are equal.",
+              "Formulae:",
+              "• Area of rhombus = d1 × d2 / 2",
+              "• Perimeter of rhombus = 4l"
+            ]
+          },
+          "section7": {
+            "name": "Trapezium",
+            "content": [
+              "In a trapezium, one set of opposite sides are parallel and unequal. The other set of opposite sides are not parallel.",
+              "Formulae:",
+              "• Area = ½ × h(a + b)",
+              "• Perimeter = Sum of all sides"
+            ]
+          },
+          "section8": {
+            "name": "Cube",
+            "content": [
+              "Formulae:",
+              "• Volume of a cube = side³",
+              "• Surface Area = 6 × (side)²",
+              "• Diagonal = √3 × side"
+            ]
+          },
+          "section9": {
+            "name": "Cuboid",
+            "content": [
+              "Formulae:",
+              "• Volume of a cuboid = length × breadth × height = l × b × h",
+              "• Total Surface Area = 2(lb + bh + hl)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "MixtureAndAllegations",
+      "data": {
+        "name": "Mixture and Alligation",
+        "exercise": {
+          "questions": [
+            {
+              "question": "In 330 litres of mixture of milk and water, water is only 24%. The milkman sold 80 litres of this mixture and then he added 60 litres of pure milk and 26 litres of pure water in the remaining mixture. What is the percentage of water in the final mixture?",
+              "answer": "B",
+              "options": [
+                "A. 39.70%",
+                "B. 25.59%",
+                "C. 34.68%",
+                "D. 37.34%",
+                "E. 16.89%"
+              ]
+            },
+            {
+              "question": "A paint maker has three different qualities of paint. 806 barrels of 1st quality, 930 barrels of 2nd quality, and 992 barrels of 3rd quality. Find the least possible number of buckets of equal size in which different paints of different qualities can be filled without mixing?",
+              "answer": "D",
+              "options": [
+                "A. 34",
+                "B. 46",
+                "C. 26",
+                "D. 44",
+                "E. None of these"
+              ]
+            },
+            {
+              "question": "Two vessels A and B contain milk and water mixed in the ratio 4:3 and 2:3. The ratio in which these mixtures should be mixed to form a new mixture containing half milk and half water is?",
+              "answer": "A",
+              "options": [
+                "A. 7:5",
+                "B. 6:5",
+                "C. 5:6",
+                "D. 4:3"
+              ]
+            },
+            {
+              "question": "A milkman makes 20% profit by selling milk mixed with water at Rs. 9 per litre. If the cost price of 1 litre of pure milk is Rs. 10, then the ratio of milk and water in the said mixture is?",
+              "answer": "A",
+              "options": [
+                "A. 3:1",
+                "B. 4:1",
+                "C. 3:2",
+                "D. 4:3"
+              ]
+            }
+          ],
+          "type": "MCQ"
+        },
+        "sections": {
+          "section5": {
+            "name": "Mixture Containing Four Ingredients",
+            "content": [
+              "How much does a shop owner mix 4 types of rice worth Rs. 95, Rs. 60, Rs. 90, and Rs. 50 per kg to make a mixture worth Rs. 80 per kg?",
+              "Ratio: 4:4:5:1"
+            ]
+          },
+          "section6": {
+            "name": "Concept of Replacement",
+            "content": [
+              "If a container initially contains 'a' units of liquid and 'b' units are replaced by water after k operations, the quantity of pure liquid left can be calculated.",
+              "8 litres are drawn from a cask full of wine and replaced with water. This operation is repeated 3 more times. The ratio of wine left to water is 16:65. How much wine did the cask originally hold?",
+              "Initial Wine: Let x = initial quantity of wine.",
+              "Process: Solve for x after 4 replacement cycles."
+            ]
+          },
+          "section1": {
+            "name": "Introduction",
+            "content": [
+              "It helps to find the ratio in which two or more ingredients with given prices must be mixed to produce a mixture at a desired price.",
+              "The cost price of a unit quantity of the mixture is called the mean price."
+            ]
+          },
+          "section2": {
+            "name": "Basic Formula",
+            "content": [
+              "If two ingredients A and B are mixed at prices x and y respectively, and the mean price is M, the required ratio is:",
+              "(y - M) / (M - x)"
+            ]
+          },
+          "section3": {
+            "name": "Worked Example 1",
+            "content": [
+              "729 Litres of mixtures containing milk and water in the ratio 7:2. How much more water should be added so that the new mixture contains milk and water in the ratio 7:3?",
+              "Water in mixture: 729 × (2/9) = 162 litres",
+              "Required Ratio: 9:1",
+              "Amount of water to add: 729 ÷ 9 × 1 = 81 litres"
+            ]
+          },
+          "section4": {
+            "name": "Mixture of More Than Two Elements",
+            "content": [
+              "Take two ingredients such that one is lower than the mean value and the other is higher.",
+              "Calculate the ratio of ingredients.",
+              "Repeat for all possible pairs.",
+              "Add values for common ingredients to find the final ratio.",
+              "Three types of Rice of Rs. 1.27, Rs. 1.29, and Rs. 1.32 per kg are mixed together to be sold at Rs. 1.30 per kg. In what ratio should this rice be mixed?",
+              "Final ratio: 2:1:5"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "NumberSeries",
+      "data": {
+        "name": "Number Series",
+        "exercise": {
+          "questions": [
+            {
+              "question": "What is the next number in the Fibonacci series 1, 1, 2, 3, 5, 8, 13?",
+              "answer": "b) 34",
+              "options": [
+                "a) 21",
+                "b) 34",
+                "c) 18",
+                "d) 23"
+              ]
+            },
+            {
+              "question": "What is the missing number in the series: 2, 8, 26, 62, 122, ?",
+              "answer": "a) 212",
+              "options": [
+                "a) 212",
+                "b) 202",
+                "c) 132",
+                "d) 142"
+              ]
+            },
+            {
+              "question": "Which number is the odd one out in the series: 11, 18, 29, 42, 59, 80, 101?",
+              "answer": "c) 80",
+              "options": [
+                "a) 59",
+                "b) 42",
+                "c) 80",
+                "d) 29"
+              ]
+            },
+            {
+              "question": "What is the next term in the series: 4096, 5120, 6400, 8000, 10000?",
+              "answer": "b) 12000",
+              "options": [
+                "a) 11000",
+                "b) 12000",
+                "c) 12500",
+                "d) 14000"
+              ]
+            },
+            {
+              "question": "What is the rule for the following series: 154, 462, 231, 693, 346.5, 1039.5?",
+              "answer": "a) ×3, ÷2, ×3, ÷2, ×3",
+              "options": [
+                "a) ×3, ÷2, ×3, ÷2, ×3",
+                "b) ×2, ÷3, ×2, ÷3, ×2",
+                "c) ÷2, ×3, ÷2, ×3, ÷2",
+                "d) ×5, ÷3, ×5, ÷3, ×5"
+              ]
+            }
+          ],
+          "type": "MCQ"
+        },
+        "sections": {
+          "section5": {
+            "subsections": {
+              "subsection1": {
+                "name": "Step-by-Step Approach",
+                "content": [
+                  "Examine the difference between adjacent numbers to identify patterns.",
+                  "If the series is increasing, check if the difference is square, cube, or multiplication.",
+                  "If the series is decreasing, check if the difference is division or subtraction.",
+                  "Look for alternating increases and decreases in the series to find the pattern."
+                ]
+              }
+            },
+            "name": "How to Proceed with Number Series"
+          },
+          "section1": {
+            "subsections": {
+              "subsection1": {
+                "name": "What is Number Series",
+                "content": [
+                  "A number series is an order of numbers arranged according to a specific pattern, rather than randomly.",
+                  "Identifying the pattern is essential to solving number series problems."
+                ]
+              }
+            },
+            "name": "Introduction to Number Series"
+          },
+          "section2": {
+            "subsections": {
+              "subsection1": {
+                "name": "Importance in Exams",
+                "content": [
+                  "Number series questions frequently appear in pre and mains exams of banks such as State Bank of India.",
+                  "Typically, these questions are asked in sets of five and can be solved in very little time."
+                ]
+              }
+            },
+            "name": "Scope in Exams"
+          },
+          "section3": {
+            "subsections": {
+              "subsection4": {
+                "name": "Perfect Square Series",
+                "content": [
+                  "This type of series is based on the square of a number, and one square number is missing from the series.",
+                  "For example: 480, 525, 572, 621, 672, 725."
+                ]
+              },
+              "subsection3": {
+                "name": "Prime Number Series",
+                "content": [
+                  "In this series, the next term is obtained by adding, multiplying, or dividing by prime numbers.",
+                  "For example: 2, 4, 12, 60, 420, 4620."
+                ]
+              },
+              "subsection2": {
+                "name": "Fibonacci Series",
+                "content": [
+                  "In the Fibonacci series, each term is found by adding the previous two terms together.",
+                  "For example: 1, 1, 2, 3, 5, 8, 13, 21."
+                ]
+              },
+              "subsection1": {
+                "name": "Difference Series",
+                "content": [
+                  "In this type of series, the pattern can be identified by finding the difference between the terms.",
+                  "If a pattern is found in the first difference, such as square, cube, or multiplication, this is called a one-tier series.",
+                  "If the pattern requires further differences, it becomes a two-tier series."
+                ]
+              },
+              "subsection7": {
+                "name": "Mixed Series",
+                "content": [
+                  "Mixed number series are a combination of different types of number series arranged in an alternating sequence.",
+                  "For example: 2, 8, 26, 62, 122, 212 with differences: +6, +18, +36, +60, +90."
+                ]
+              },
+              "subsection6": {
+                "name": "Ratio Series",
+                "content": [
+                  "This type of series follows a ratio between consecutive terms.",
+                  "For example: 4096, 5120, 6400, 8000, 10000, where the ratio between terms is 4:5."
+                ]
+              },
+              "subsection5": {
+                "name": "Perfect Cube Series",
+                "content": [
+                  "This series is based on the cube of a number, with one cube number missing.",
+                  "For example: 2197, 3375, 4913, 6859, 9261."
+                ]
+              }
+            },
+            "name": "Different Types of Number Series"
+          },
+          "section4": {
+            "subsections": {
+              "subsection3": {
+                "name": "Coding Decoding Series",
+                "content": [
+                  "In these questions, the relationship between numbers is defined, and you need to decode the next number in the series.",
+                  "Example: 154, 462, 231, 693, 346.5, 1039.5 with operations: ×3, ÷2, ×3, ÷2, ×3."
+                ]
+              },
+              "subsection2": {
+                "name": "Wrong Number Series",
+                "content": [
+                  "In these questions, one number does not follow the pattern and is considered the odd one out.",
+                  "Example: 11, 18, 29, 42, 59, 80, 101."
+                ]
+              },
+              "subsection1": {
+                "name": "Missing Number",
+                "content": [
+                  "In these questions, one number is missing from a series.",
+                  "The goal is to find the missing number by identifying the pattern.",
+                  "Example: 4, 5, 9, 16, 26, 39, 55, 74."
+                ]
+              }
+            },
+            "name": "Types of Questions Asked in Exams"
+          }
+        }
+      }
+    },
+    {
+      "id": "NumberSystem",
+      "data": {
+        "name": "Number System",
+        "exercise": {
+          "questions": [
+            {
+              "question": "What does a number system deal with?",
+              "answer": "Writing numbers",
+              "options": [
+                "Writing words",
+                "Writing numbers",
+                "Adding numbers",
+                "Counting numbers"
+              ]
+            },
+            {
+              "question": "What is the purpose of a number system?",
+              "answer": "To count and measure",
+              "options": [
+                "To count and measure",
+                "To plot graphs",
+                "To create patterns",
+                "To simplify calculations"
+              ]
+            },
+            {
+              "question": "What is the base of the Decimal Number System?",
+              "answer": "Ten",
+              "options": [
+                "Two",
+                "Eight",
+                "Ten",
+                "Sixteen"
+              ]
+            },
+            {
+              "question": "Which number system uses the digits 0-1?",
+              "answer": "Binary",
+              "options": [
+                "Binary",
+                "Decimal",
+                "Octal",
+                "Hexadecimal"
+              ]
+            },
+            {
+              "question": "Which of the following is an imaginary number?",
+              "answer": "Seven i",
+              "options": [
+                "Two",
+                "Seven i",
+                "Three",
+                "Negative Four"
+              ]
+            }
+          ],
+          "type": "MCQ"
+        },
+        "sections": {
+          "section5": {
+            "name": "Types of Numbers",
+            "content": [
+              "Numbers can be classified as Imaginary Numbers, Real Numbers, Rational Numbers, Irrational Numbers, Integers, Natural Numbers, Whole Numbers, and more."
+            ]
+          },
+          "section1": {
+            "name": "Definition",
+            "content": [
+              "A number system, or system of numeration, is a writing system of numbers or symbols in a consistent manner.",
+              "In simple terms, we can say that a number system deals with writing numbers."
+            ]
+          },
+          "section2": {
+            "name": "Types of Number Systems",
+            "content": [
+              "Number systems can be classified into Binary, Octal, Decimal, and Hexadecimal systems.",
+              "These are used in computers today, with the Decimal Number System being the most commonly used in mathematics."
+            ]
+          },
+          "section3": {
+            "name": "Decimal Number System",
+            "content": [
+              "The Decimal Number System uses ten digits, which are 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9.",
+              "We can form any number using these digits. The base of this system is also ten."
+            ]
+          },
+          "section4": {
+            "name": "Indian System and International System",
+            "content": [
+              "The Indian and International systems both read numbers from left to right but differ in the terms used for number representation and their place value."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "PermutationAndCombination",
+      "data": {
+        "name": "Permutation and Combination",
+        "exercise": {
+          "questions": [
+            {
+              "question": "What is the value of 5!?",
+              "answer": "a) 120",
+              "options": [
+                "a) 120",
+                "b) 60",
+                "c) 24",
+                "d) 100"
+              ]
+            },
+            {
+              "question": "What is the formula for the number of permutations of 'n' things taken 'r' at a time?",
+              "answer": "a) nPr = n! / (n - r)!",
+              "options": [
+                "a) nPr = n! / (n - r)!",
+                "b) nPr = n! × (n - r)!",
+                "c) nPr = n × r!",
+                "d) nPr = r × n!"
+              ]
+            },
+            {
+              "question": "How many permutations can be made from 3 objects A, B, and C?",
+              "answer": "b) 6",
+              "options": [
+                "a) 3",
+                "b) 6",
+                "c) 9",
+                "d) 4"
+              ]
+            },
+            {
+              "question": "What is the formula for combination?",
+              "answer": "a) nCr = n! / (r! × (n - r)!)",
+              "options": [
+                "a) nCr = n! / (r! × (n - r)!)",
+                "b) nCr = n! × (r! × (n - r)!)",
+                "c) nCr = (n - r)! / r!",
+                "d) nCr = n × r!"
+              ]
+            },
+            {
+              "question": "What is the main difference between permutation and combination?",
+              "answer": "a) Permutation considers the order, while combination does not",
+              "options": [
+                "a) Permutation considers the order, while combination does not",
+                "b) Permutation does not consider the order, while combination does",
+                "c) Both consider the order",
+                "d) Neither considers the order"
+              ]
+            }
+          ],
+          "type": "MCQ"
+        },
+        "sections": {
+          "section1": {
+            "name": "Factorial",
+            "content": [
+              "A factorial is defined as the product of all natural numbers up to a given number. It is represented as 'n factorial' and written as n!. This means n! equals n times (n minus 1) times (n minus 2), and so on, down to 1.",
+              "For example: 4! = 4 × 3 × 2 × 1 = 24, 5! = 5 × 4 × 3 × 2 × 1 = 120.",
+              "Factorials can be expressed in terms of smaller factorials. For example, 5! = 5 × 4!, and 4! = 4 × 3!, and so on, until we reach 1!"
+            ]
+          },
+          "section2": {
+            "name": "Permutation",
+            "content": [
+              "Permutation refers to the number of different arrangements that can be made by taking some or all of a given set of things at a time. The order of arrangement matters.",
+              "For example, arranging two numbers, A and B, gives two different permutations: AB and BA.",
+              "The number of permutations of 'n' things taken 'n' at a time is denoted as nPn = n!, and the number of permutations of 'n' things taken 0 at a time is 1.",
+              "The formula for permutation is: nPr = n! / (n - r)!"
+            ]
+          },
+          "section3": {
+            "name": "Combination",
+            "content": [
+              "Combination refers to the number of ways in which a set of things can be selected. In combination, the order of selection does not matter.",
+              "For example, if selecting two numbers A and B, AB and BA are counted as one combination.",
+              "The formula for combination is: nCr = n! / (r! × (n - r)!)",
+              "The relationship between combinations is: nCr = nC(n - r). The sum of all combinations from nC0 to nCn is equal to 2^n."
+            ]
+          },
+          "section4": {
+            "name": "Permutation vs Combination",
+            "content": [
+              "Permutation is used when we want to arrange 'r' things out of 'n' things, and combination is used when we want to select 'r' things from 'n'.",
+              "In permutation, the order of arrangement matters, whereas in combination, the order does not matter.",
+              "Formula for permutation: nPr = n! / (n - r)!, Formula for combination: nCr = n! / (r! × (n - r)!)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "RatioAndProportion",
+      "data": {
+        "name": "Ratio and Proportion",
+        "exercise": {
+          "questions": [
+            {
+              "question": "What is the compounded ratio of 17:23, 115:153, and 18:25?",
+              "answer": "b) 2:5",
+              "options": [
+                "a) 1:3",
+                "b) 2:5",
+                "c) 5:7",
+                "d) 3:4"
+              ]
+            },
+            {
+              "question": "In the proportion 3:27 ∷ 5:?, what is the missing term?",
+              "answer": "b) 45",
+              "options": [
+                "a) 15",
+                "b) 45",
+                "c) 25",
+                "d) 50"
+              ]
+            },
+            {
+              "question": "What is the formula for finding the third proportion in a ratio a: b = b: c?",
+              "answer": "c) c = b² / a",
+              "options": [
+                "a) a × b = c",
+                "b) c = (b × b) / a",
+                "c) c = b² / a",
+                "d) c = a × b"
+              ]
+            },
+            {
+              "question": "If a: b = 3:4 and c: d = 5:6, what is the fourth proportion to a, b, and c?",
+              "answer": "b) 15",
+              "options": [
+                "a) 12",
+                "b) 15",
+                "c) 10",
+                "d) 20"
+              ]
+            },
+            {
+              "question": "The mean proportional between 14 and 15 is:",
+              "answer": "b) 14.5",
+              "options": [
+                "a) 14.0",
+                "b) 14.5",
+                "c) 15.0",
+                "d) 13.5"
+              ]
+            }
+          ],
+          "type": "MCQ"
+        },
+        "sections": {
+          "section5": {
+            "name": "Fourth Proportion",
+            "content": [
+              "If a: b = c: d, then d is called the fourth proportion to a, b, and c."
+            ]
+          },
+          "section6": {
+            "name": "Mean Proportion",
+            "content": [
+              "The mean proportion of a and b is given by √(a × b)."
+            ]
+          },
+          "section7": {
+            "name": "Important Questions",
+            "content": [
+              "These questions involve applying ratio and proportion concepts in real-life problems."
+            ]
+          },
+          "section1": {
+            "name": "Ratio",
+            "content": [
+              "The ratio of two quantities a and b is the fraction a/b and is written as a: b.",
+              "In the ratio a: b, 'a' is called the first term or antecedent, and 'b' is the second term or consequent.",
+              "For example, ratio 5:9 represents 5/9, with antecedent = 5 and consequent = 9."
+            ]
+          },
+          "section2": {
+            "name": "Compounded Ratio",
+            "content": [
+              "If two or more ratios are given, the compounded ratio is calculated by multiplying antecedents together and consequents together.",
+              "Formula: (a: b), (c: d), (e: f) => ace: bdf"
+            ]
+          },
+          "section3": {
+            "name": "Proportion",
+            "content": [
+              "The equality of two ratios is called proportion.",
+              "If a: b = c: d, we write it as a: b ∷ c: d.",
+              "In proportion, a and d are extremes, while b and c are means.",
+              "Product of means = Product of extremes: b × c = a × d."
+            ]
+          },
+          "section4": {
+            "name": "Third Proportion",
+            "content": [
+              "If a: b = b: c, then c is called the third proportion to a and b."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "SimpleAndCompoundInterest",
+      "data": {
+        "name": "Simple and Compound Interest",
+        "exercise": {
+          "questions": [
+            {
+              "question": "What is the term for the amount of money borrowed or lent?",
+              "answer": "b) Principal",
+              "options": [
+                "a) Interest",
+                "b) Principal",
+                "c) Amount",
+                "d) Rate of interest"
+              ]
+            },
+            {
+              "question": "What is the formula for calculating Simple Interest?",
+              "answer": "a) Simple Interest = Principal × Rate × Time / 100",
+              "options": [
+                "a) Simple Interest = Principal × Rate × Time / 100",
+                "b) Simple Interest = Principal × Rate + Time",
+                "c) Simple Interest = Principal × Time / Rate",
+                "d) Simple Interest = Rate × Time / Principal"
+              ]
+            },
+            {
+              "question": "How is the total amount calculated in an interest transaction?",
+              "answer": "a) By adding the principal and interest",
+              "options": [
+                "a) By adding the principal and interest",
+                "b) By subtracting the interest from the principal",
+                "c) By multiplying the principal and interest",
+                "d) By dividing the principal by the interest"
+              ]
+            },
+            {
+              "question": "What is Compound Interest?",
+              "answer": "b) Interest calculated on the principal and accumulated interest",
+              "options": [
+                "a) Interest calculated on the principal only",
+                "b) Interest calculated on the principal and accumulated interest",
+                "c) Interest calculated at a fixed rate",
+                "d) Interest that decreases over time"
+              ]
+            },
+            {
+              "question": "What does 'time' refer to in the context of interest?",
+              "answer": "a) The duration for which the money is borrowed or deposited",
+              "options": [
+                "a) The duration for which the money is borrowed or deposited",
+                "b) The amount borrowed",
+                "c) The rate of interest per year",
+                "d) The total amount repaid"
+              ]
+            }
+          ],
+          "type": "MCQ"
+        },
+        "sections": {
+          "section1": {
+            "name": "Definition of Interest",
+            "content": [
+              "Interest is the amount of money that is paid on borrowed funds or the amount received on money that is lent.",
+              "The amount of money that is borrowed or lent is called the principal.",
+              "The total sum of the interest and the principal is referred to as the amount.",
+              "The percentage at which interest is charged on the principal is known as the rate of interest.",
+              "The duration for which the money is borrowed or deposited is referred to as the time."
+            ]
+          },
+          "section2": {
+            "name": "Types of Interest",
+            "content": [
+              "Interest can be classified into two types: Simple Interest and Compound Interest."
+            ]
+          },
+          "section3": {
+            "name": "Simple Interest",
+            "content": [
+              "Simple interest is calculated only on the principal amount for each year.",
+              "The formula for calculating simple interest is: Simple Interest = Principal × Rate of Interest × Time / 100.",
+              "In this formula: P represents the principal, r represents the rate of interest per year, and t represents the time period in years.",
+              "When the time period is given in months, convert it into years by dividing it by 12.",
+              "When the time period is given in days, convert it into years by dividing it by 365."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "Simplification",
+      "data": {
+        "name": "Simplification",
+        "exercise": {
+          "questions": [
+            {
+              "question": "What is the sum of 345 + 567 + 789?",
+              "answer": "c) 1701",
+              "options": [
+                "a) 1201",
+                "b) 1401",
+                "c) 1701",
+                "d) 2001"
+              ]
+            },
+            {
+              "question": "Simplify the expression: (7 + 8) × (5 + 6)",
+              "answer": "b) 75",
+              "options": [
+                "a) 65",
+                "b) 75",
+                "c) 85",
+                "d) 95"
+              ]
+            },
+            {
+              "question": "Solve: 1234 + 5678 - 4321",
+              "answer": "b) 4591",
+              "options": [
+                "a) 4581",
+                "b) 4591",
+                "c) 4592",
+                "d) 4593"
+              ]
+            },
+            {
+              "question": "Simplify: 345 + 678 + 123",
+              "answer": "b) 1146",
+              "options": [
+                "a) 1145",
+                "b) 1146",
+                "c) 1147",
+                "d) 1148"
+              ]
+            },
+            {
+              "question": "Calculate: 567 - 345 + 123",
+              "answer": "a) 345",
+              "options": [
+                "a) 345",
+                "b) 355",
+                "c) 365",
+                "d) 375"
+              ]
+            },
+            {
+              "question": "Find the product: 47 × 53",
+              "answer": "b) 2491",
+              "options": [
+                "a) 2411",
+                "b) 2491",
+                "c) 2511",
+                "d) 2611"
+              ]
+            },
+            {
+              "question": "Multiply: 25 × 36",
+              "answer": "b) 900",
+              "options": [
+                "a) 850",
+                "b) 900",
+                "c) 950",
+                "d) 1000"
+              ]
+            },
+            {
+              "question": "Calculate: 15 × 20",
+              "answer": "b) 300",
+              "options": [
+                "a) 200",
+                "b) 300",
+                "c) 400",
+                "d) 500"
+              ]
+            },
+            {
+              "question": "Find the square of 32.",
+              "answer": "a) 1024",
+              "options": [
+                "a) 1024",
+                "b) 1025",
+                "c) 1034",
+                "d) 1044"
+              ]
+            },
+            {
+              "question": "Calculate the square of 14.",
+              "answer": "a) 196",
+              "options": [
+                "a) 196",
+                "b) 198",
+                "c) 200",
+                "d) 202"
+              ]
+            }
+          ]
+        },
+        "sections": {
+          "section5": {
+            "subsections": {
+              "subsection2": {
+                "name": "Square of Two-Digit Numbers",
+                "content": [
+                  "(a + b)^2 = a^2 + 2ab + b^2",
+                  "(56)^2 = (5/6)^2",
+                  "5^2 / 2 × 5 × 6 / 6^2",
+                  "= 25 / 60 / 36",
+                  "= 31 / 3 / 6",
+                  "= 3136",
+                  "Break the number into two parts (5 & 6) and apply the formula (a + b)^2 = a^2 + 2ab + b^2."
+                ]
+              },
+              "subsection1": {
+                "name": "Squares from 1 to 50",
+                "content": [
+                  "Examples:",
+                  "1^2 = 1",
+                  "2^2 = 4",
+                  "3^2 = 9",
+                  "...",
+                  "50^2 = 2500"
+                ]
+              }
+            },
+            "name": "Square and Square Roots"
+          },
+          "section1": {
+            "subsections": {
+              "subsection1": {
+                "name": "Types of Numbers",
+                "content": [
+                  "Digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9",
+                  "Natural Numbers: 1, 2, 3, 4, ...",
+                  "Whole Numbers: 0, 1, 2, 3, 4, ...",
+                  "Integers: ..., -3, -2, -1, 0, 1, 2, 3, ...",
+                  "Real Numbers: ..., 2.8, -2, -10, 1, 1.9, -2, 3, 3.12, 3.13, ...",
+                  "Even Numbers: 2, 4, 6, ...",
+                  "Odd Numbers: 1, 3, 5, 7, ...",
+                  "Prime Numbers: 2, 3, 5, 7, 11, 13, 17, 19, ..."
+                ]
+              }
+            },
+            "name": "Helping Hands"
+          },
+          "section2": {
+            "subsections": {
+              "subsection1": {
+                "name": "Basic Algebra",
+                "content": [
+                  "(a + b)^2 = a^2 + 2ab + b^2",
+                  "(a - b)^2 = a^2 - 2ab + b^2",
+                  "a^2 - b^2 = (a + b)(a - b)",
+                  "(a + b)^3 = a^3 + b^3 + 3ab(a + b)",
+                  "(a - b)^3 = a^3 - b^3 - 3ab(a - b)",
+                  "a^3 + b^3 = (a + b)(a^2 + b^2 - ab)",
+                  "a^3 - b^3 = (a - b)(a^2 + b^2 + ab)"
+                ]
+              }
+            },
+            "name": "Formulas"
+          },
+          "section3": {
+            "subsections": {
+              "subsection2": {
+                "name": "Real Numbers",
+                "content": [
+                  "8456 + 3891 + 4560 = ?",
+                  "? = 16907",
+                  "3.981 + 14.34 + 12.5 = ?",
+                  "Balance decimals: 3.981 + 14.340 + 12.500 = 30.821"
+                ]
+              },
+              "subsection1": {
+                "name": "Examples",
+                "content": [
+                  "? = 8 + 88 + 888 + 8888 + 88888",
+                  "? = 8(1 + 11 + 111 + 1111 + 11111) = 8(12345) ⇒ 98760",
+                  "? = 0.8 + 0.88 + 0.888 + 0.8888 + 0.88888",
+                  "? = 8(0.1 + 0.11 + 0.111 + 0.1111 + 0.11111) = 8(0.54321) ⇒ 4.34568"
+                ]
+              }
+            },
+            "name": "Addition and Subtraction"
+          },
+          "section4": {
+            "subsections": {
+              "subsection2": {
+                "name": "Tens Digit Rules",
+                "content": [
+                  "When the sum of the tens digits is 10 and the unit digits are the same",
+                  "46 × 66",
+                  "(4 × 6) + 6 / 6 × 6",
+                  "24 + 6 / 36",
+                  "30 / 36",
+                  "3036"
+                ]
+              },
+              "subsection1": {
+                "name": "Unit Digit Rules",
+                "content": [
+                  "When the sum of the unit digits is 10 and the remaining digits are the same",
+                  "43 × 47",
+                  "4 × (4 + 1) / 3 × 7",
+                  "4 × 5 / 21",
+                  "20 / 21",
+                  "2021"
+                ]
+              }
+            },
+            "name": "Multiplication"
+          }
+        }
+      }
+    },
+    {
+      "id": "TimeAndDistance",
+      "data": {
+        "name": "Time-Speed and Distance",
+        "exercise": {
+          "questions": [
+            {
+              "question": "Convert 54 km/hr into m/sec.",
+              "answer": "b) 15 m/sec",
+              "options": [
+                "a) 10 m/sec",
+                "b) 15 m/sec",
+                "c) 20 m/sec",
+                "d) 30 m/sec"
+              ]
+            },
+            {
+              "question": "A car goes 20 meters in a second. Find its speed in km/hr.",
+              "answer": "b) 72 km/hr",
+              "options": [
+                "a) 60 km/hr",
+                "b) 72 km/hr",
+                "c) 80 km/hr",
+                "d) 90 km/hr"
+              ]
+            },
+            {
+              "question": "The speed of three cars is in the ratio 5: 4: 6. The ratio between the time taken by them to travel the same distance is?",
+              "answer": "b) 12: 15: 10",
+              "options": [
+                "a) 10: 12: 15",
+                "b) 12: 15: 10",
+                "c) 8: 9: 7",
+                "d) 5: 6: 7"
+              ]
+            },
+            {
+              "question": "A man traveled 12 km at a speed of 4 km/hr and further 10 km at a speed of 5 km/hr. What is his average speed?",
+              "answer": "b) 4.4 km/hr",
+              "options": [
+                "a) 4 km/hr",
+                "b) 4.4 km/hr",
+                "c) 5 km/hr",
+                "d) 5.4 km/hr"
+              ]
+            },
+            {
+              "question": "The speeds of Shaan and Rohan are 50 km/h and 30 km/h respectively. Shaan starts 3 hours earlier than Rohan to meet at a point. The distance between them is 710 km. What is the distance between the meeting point and Shaan's starting place?",
+              "answer": "b) 500 km",
+              "options": [
+                "a) 480 km",
+                "b) 500 km",
+                "c) 600 km",
+                "d) 520 km"
+              ]
+            },
+            {
+              "question": "The distance between A and B is 370 km. Car 1 departs from A at 10 am at 80 km/hr, and car 2 departs from B at 1 pm at 50 km/hr. When will the two cars meet?",
+              "answer": "a) 2:00 pm",
+              "options": [
+                "a) 2:00 pm",
+                "b) 3:00 pm",
+                "c) 4:00 pm",
+                "d) 1:00 pm"
+              ]
+            },
+            {
+              "question": "A man takes 5 hours 45 minutes to walk to a certain place and ride back. He would have saved 2 hours had he ridden both ways. What is the time he would take to walk both ways?",
+              "answer": "b) 7 hours 45 minutes",
+              "options": [
+                "a) 7 hours",
+                "b) 7 hours 45 minutes",
+                "c) 8 hours",
+                "d) 6 hours 30 minutes"
+              ]
+            },
+            {
+              "question": "A cyclist covers a distance of 750 meters in 2 min 30 sec. What is his speed in km/hr?",
+              "answer": "b) 18 km/hr",
+              "options": [
+                "a) 10 km/hr",
+                "b) 18 km/hr",
+                "c) 20 km/hr",
+                "d) 15 km/hr"
+              ]
+            }
+          ],
+          "type": "MCQ"
+        },
+        "sections": {
+          "section1": {
+            "name": "Speed, Time, and Distance",
+            "content": [
+              "Speed is defined as the rate of travel to cover a certain distance. It is expressed in m/s, km/hr, etc.",
+              "Time is defined as the duration for which traveling has been done to cover a certain distance. It is expressed in seconds, hours, etc.",
+              "Distance is defined as the length of the path for which traveling has been done. It is expressed in meters, kilometers, etc.",
+              "Formula for Speed: Speed = Distance / Time.",
+              "Formula for Time: Time = Distance / Speed.",
+              "Formula for Distance: Distance = Speed × Time."
+            ]
+          },
+          "section2": {
+            "name": "Ratios of Speed, Distance, and Time",
+            "content": [
+              "If the ratio of the speeds of A and B is a : b, then the ratio of the times taken by them to cover the same distance will be b : a."
+            ]
+          },
+          "section3": {
+            "name": "Average Speed",
+            "content": [
+              "The formula for average speed when the total distance and total time are known is: Average Speed = Total Distance / Total Time.",
+              "In case of two different speeds for the same distance, the average speed is given by: Average Speed = (2 × Speed1 × Speed2) / (Speed1 + Speed2)."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "TimeAndWork",
+      "data": {
+        "name": "Time and Work",
+        "exercise": {
+          "questions": [
+            {
+              "question": "A can complete a piece of work in 12 days, while B can complete it in 18 days. If they work together, how many days will they take to complete the work?",
+              "answer": "b) 7.2 days",
+              "options": [
+                "a) 6 days",
+                "b) 7.2 days",
+                "c) 8 days",
+                "d) 9 days"
+              ]
+            },
+            {
+              "question": "If A is twice as efficient as B and together they can complete a work in 10 days, in how many days can A complete the work alone?",
+              "answer": "c) 20 days",
+              "options": [
+                "a) 10 days",
+                "b) 15 days",
+                "c) 20 days",
+                "d) 25 days"
+              ]
+            },
+            {
+              "question": "A and B can complete a job together in 8 days. If A alone can do it in 12 days, how many days will B take to do the work alone?",
+              "answer": "c) 24 days",
+              "options": [
+                "a) 18 days",
+                "b) 20 days",
+                "c) 24 days",
+                "d) 30 days"
+              ]
+            },
+            {
+              "question": "A and B are hired to complete a job for $1,500. A can do the work in 10 days and B in 15 days. What is the share of A in the payment if they work together to complete the job?",
+              "answer": "c) $900",
+              "options": [
+                "a) $500",
+                "b) $600",
+                "c) $900",
+                "d) $1,000"
+              ]
+            },
+            {
+              "question": "12 men can complete a work in 36 days. How many men will be required to complete the same work in 24 days?",
+              "answer": "a) 18 men",
+              "options": [
+                "a) 18 men",
+                "b) 16 men",
+                "c) 15 men",
+                "d) 20 men"
+              ]
+            }
+          ],
+          "type": "MCQ"
+        },
+        "sections": {
+          "section1": {
+            "name": "Basic Concepts of Time and Work",
+            "content": [
+              "If A can do a piece of work in x days, then in one day, A completes 1/x of the work.",
+              "If A is thrice as efficient as B, then A will complete 3 times the work of B in the same amount of time, and B will take 3 times the time that A takes to complete the same work.",
+              "Efficiency is directly proportional to the work done and inversely proportional to the time taken.",
+              "If two people A and B work together, their combined efficiency is the sum of their individual efficiencies."
+            ]
+          },
+          "section2": {
+            "name": "Work and Wages",
+            "content": [
+              "The ratio of wages of people doing the same work is directly proportional to their efficiency."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "profitAndLoss",
+      "data": {
+        "name": "Profit and Loss",
+        "sections": {
+          "section5": {
+            "subsections": {
+              "subsection2": {
+                "name": "Margin",
+                "content": [
+                  "Margin is the profit expressed as a percentage of the selling price:",
+                  "Margin = (P / S) × 100%",
+                  "= ((S - C) / S) × 100%"
+                ]
+              },
+              "subsection1": {
+                "name": "Markup",
+                "content": [
+                  "Markup is the amount added to the cost price to determine the selling price:",
+                  "Markup = S - C",
+                  "Markup % = ((S - C) / C) × 100%"
+                ]
+              }
+            },
+            "name": "Markup and Margin"
+          },
+          "section6": {
+            "name": "Break-Even Point",
+            "content": [
+              "The break-even point occurs when total revenue equals total cost (i.e., no profit or loss):",
+              "Let Q = Quantity sold",
+              "F = Fixed costs",
+              "V = Variable cost per unit",
+              "P = Price per unit",
+              "Break-even quantity: Q = F / (P - V)"
+            ]
+          },
+          "section1": {
+            "name": "Introduction",
+            "content": [
+              "In business mathematics, profit and loss are fundamental concepts that quantify the financial performance of a business.",
+              "This chapter explores the mathematical relationships between cost, revenue, and profit."
+            ]
+          },
+          "section2": {
+            "name": "Basic Definitions",
+            "content": [
+              "Let:",
+              "C = Cost price (the amount spent to produce or acquire goods)",
+              "S = Selling price (the amount received from selling goods)",
+              "P = Profit (positive) or Loss (negative)"
+            ]
+          },
+          "section3": {
+            "subsections": {
+              "subsection2": {
+                "name": "Loss Equation",
+                "content": [
+                  "When C > S, a loss is incurred: P = S - C (note: P will be negative in this case)"
+                ]
+              },
+              "subsection1": {
+                "name": "Profit Equation",
+                "content": [
+                  "When S > C, a profit is made: P = S - C"
+                ]
+              }
+            },
+            "name": "Fundamental Equations"
+          },
+          "section4": {
+            "subsections": {
+              "subsection2": {
+                "name": "Loss Percentage",
+                "content": [
+                  "Loss percentage is also calculated as a percentage of the cost price:",
+                  "Loss % = (L / C) × 100%",
+                  "= ((C - S) / C) × 100%"
+                ]
+              },
+              "subsection1": {
+                "name": "Profit Percentage",
+                "content": [
+                  "Profit percentage is calculated as a percentage of the cost price:",
+                  "Profit % = (P / C) × 100%",
+                  "= ((S - C) / C) × 100%"
+                ]
+              }
+            },
+            "name": "Formulas"
+          }
+        },
+        "exercise": {
+          "type": "MCQ",
+          "questions": [
+            {
+              "answer": {
+                "a": "Profit = Rs.100 - Rs.80 = Rs.20",
+                "b": "Profit Percentage = (20 / 80) × 100% = 25%",
+                "c": "Markup Percentage = (20 / 80) × 100% = 25%"
+              },
+              "options": [
+                "a) The profit",
+                "b) The profit percentage",
+                "c) The markup percentage"
+              ],
+              "question": "1. A retailer buys a product for Rs.80 and sells it for Rs.100. Calculate:"
+            },
+            {
+              "options": [
+                "a) Rs.170",
+                "b) Rs.160",
+                "c) Rs.150",
+                "d) Rs.180"
+              ],
+              "answer": "Rs.170",
+              "question": "2. A company incurs a loss of 15% on a product that cost Rs.200. What was the selling price?"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
