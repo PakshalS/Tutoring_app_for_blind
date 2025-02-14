@@ -26,7 +26,10 @@ def read_root():
 
 if __name__ == "__main__":
     import uvicorn
-    PORT = os.getenv("PORT")  # Do NOT use a default value
+    PORT = os.getenv("PORT")
     if PORT is None:
+        print("ERROR: PORT environment variable is NOT SET!", flush=True)
         raise ValueError("PORT environment variable is not set")
+    
+    print(f"Starting server on PORT: {PORT}", flush=True)  # Log for debugging
     uvicorn.run(app, host="0.0.0.0", port=int(PORT))
