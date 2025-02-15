@@ -1,13 +1,13 @@
-from fastapi import APIRouter
-from pydantic import BaseModel
+from flask import Blueprint, request, jsonify
 from services.chatbot_service import generate_response
 
-router = APIRouter(prefix="/chatbot", tags=["Chatbot"])
+chatbot_bp = Blueprint("chatbot", __name__)
 
-class QueryModel(BaseModel):
-    question: str
+@chatbot_bp.route("/chatbot", methods=["POST"])
+def chatbot():
+    data = request.json
+    if "question" not in data:
+        return jsonify({"error": "Missing 'question' field"}), 400
 
-@router.post("/")
-def chatbot(query: QueryModel):
-    response = generate_response(query.question)
-    return {"response": response}
+    response = generate_response(data["question"])
+    return jsonify({"response": response})

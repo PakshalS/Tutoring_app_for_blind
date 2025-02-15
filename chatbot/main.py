@@ -1,35 +1,22 @@
 import os
-from fastapi import FastAPI
+from flask import Flask, jsonify
 from services.rag_service import embed_json_data
-from api.chatbot import router as chatbot_router
-from fastapi.middleware.cors import CORSMiddleware
+from api.chatbot import chatbot_bp  # Import Flask blueprint
 
-app = FastAPI(title="RAG Chatbot API")
+app = Flask(__name__)
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins (Change for security)
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# ✅ Ensure chatbot routes are included
+app.register_blueprint(chatbot_bp)
 
-# Include chatbot routes
-app.include_router(chatbot_router)
-
-# Ensure FAISS is ready
+# ✅ Ensure embeddings are loaded
 embed_json_data()
 
-@app.get("/")
-def read_root():
-    return {"message": "Welcome to the RAG Chatbot API"}
+@app.route("/", methods=["GET"])
+def home():
+    return jsonify({"message": "Welcome to the Flask RAG Chatbot API"})
 
 if __name__ == "__main__":
-    import uvicorn
-    PORT = os.getenv("PORT")
-    if PORT is None:
-        print("ERROR: PORT environment variable is NOT SET!", flush=True)
-        raise ValueError("PORT environment variable is not set")
-    
-    print(f"Starting server on PORT: {PORT}", flush=True)  # Log for debugging
-    uvicorn.run(app, host="0.0.0.0", port=int(PORT))
+    from waitress import serve
+    import os
+    PORT = int(os.environ.get("PORT", 8080))  # Default to 8080 if PORT is not set
+    serve(app, host="0.0.0.0", port=PORT)
