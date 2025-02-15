@@ -1,3 +1,4 @@
+import os
 from flask import Flask, jsonify
 from services.rag_service import embed_json_data
 from api.chatbot import chatbot_bp  # Import Flask blueprint
@@ -14,5 +15,7 @@ embed_json_data()
 def home():
     return jsonify({"message": "Welcome to the Flask RAG Chatbot API"})
 
-if __name__ == "_main_":
-    app.run(port=5000,debug=True)
+if __name__ == "__main__":
+    from waitress import serve
+    PORT = int(os.environ.get("PORT", 5000)) 
+    serve(app, host="0.0.0.0", port=PORT)  # ✅ Bind to 0.0.0.0
