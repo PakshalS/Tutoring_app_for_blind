@@ -1,67 +1,56 @@
-from langchain.chains import RetrievalQA
-from langchain_community.llms import HuggingFacePipeline
-from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
-from .rag_service import get_vector_store
 import os
+import requests
+from langchain.chains import RetrievalQA
+from .rag_service import get_vector_store
+from dotenv import load_dotenv
 
-# Load model once to avoid repeated initialization
-MODEL_NAME = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
-MODEL_DIR = "models/tinyllama"
+load_dotenv()
 
+# ✅ Load API Key for Gemini
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_MODEL_URL = f"https://generativelanguage.googleapis.com/v1/models/gemini-1.5-pro:generateContent?key={GEMINI_API_KEY}"
 
-# Load model from cache if available
-if not os.path.exists(MODEL_DIR):
-    print("Downloading model for the first time...")
-    os.makedirs(MODEL_DIR, exist_ok=True)
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, cache_dir=MODEL_DIR)
-    model = AutoModelForCausalLM.from_pretrained(MODEL_NAME, cache_dir=MODEL_DIR)
-else:
-    print("Loading cached model...")
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR)
-    model = AutoModelForCausalLM.from_pretrained(MODEL_DIR)
-hf_pipeline = pipeline("text-generation", model=model, tokenizer=tokenizer, max_new_tokens=150)
-
-llm = HuggingFacePipeline(pipeline=hf_pipeline)
-
-# Load FAISS once
+# ✅ Load FAISS retriever
 vector_store = get_vector_store()
-retriever = vector_store.as_retriever(search_kwargs={"k": 1})  # Fetch only the most relevant document
+retriever = vector_store.as_retriever(search_kwargs={"k": 1})
 
-# Initialize QA Chain
-qa = RetrievalQA.from_chain_type(
-    llm=llm,
-    retriever=retriever,
-    return_source_documents=True
-)
+def query_gemini_api(prompt: str):
+    headers = {"Content-Type": "application/json"}
+    payload = {
+        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "maxOutputTokens": 600,  # Increased token limit for a longer response
+            "temperature": 0.7,
+            "topP": 0.9
+        }
+    }
 
-def format_response(response_text):
-    """Cleans up response text before returning."""
-    response_text = response_text.replace(
-        "Use the following pieces of context to answer the question at the end.", ""
-    ).strip()
-
-    # Remove any text starting with "Q:" or "Helpful Answer:"
-    response_text = response_text.split("\nQ:")[0]  # Remove unnecessary Q&A parts
-    response_text = response_text.split("\nHelpful Answer:")[0]  # Remove duplicates
-
-    return response_text.strip()
+    try:
+        response = requests.post(GEMINI_MODEL_URL, headers=headers, json=payload)
+        response.raise_for_status()
+        return response.json()["candidates"][0]["content"]["parts"][0]["text"]
+    except requests.exceptions.RequestException as e:
+        return f"Error: {e}"
 
 def generate_response(query: str):
-    """Generates a response using the RAG pipeline."""
+    """Generates a detailed response using the Gemini API and FAISS context retrieval."""
     
     retrieved_docs = retriever.get_relevant_documents(query)
+    
+    if retrieved_docs:
+        best_match = retrieved_docs[0].page_content
+        metadata = retrieved_docs[0].metadata
+        chapter = metadata.get("chapter", "Unknown Chapter")
+        section = metadata.get("section", "Unknown Section")
+        
+        # Explicit instruction for a detailed explanation
+        prompt = (f"Using the following context, provide a detailed explanation for the question, "
+                  f"including a step-by-step calculation and an example if applicable:\n\n"
+                  f"Context: {best_match}\n\n"
+                  f"Question: {query}\n\nDetailed Answer:")
+    else:
+        prompt = f"Provide a detailed answer to the following question, including an example if applicable:\n\nQuestion: {query}\n\nDetailed Answer:"
 
-    if not retrieved_docs:
-        return "Sorry, I couldn't find relevant information."
+    response_text = query_gemini_api(prompt)
 
-    best_match = retrieved_docs[0].page_content  # Take only the most relevant result
-
-    # Extract metadata
-    metadata = retrieved_docs[0].metadata
-    chapter = metadata.get("chapter", "Unknown Chapter")
-    section = metadata.get("section", "Unknown Section")
-
-    # Post-processing to clean response
-    cleaned_response = format_response(best_match)
-
-    return f"{cleaned_response}\n\n(Chapter: {chapter}, Section: {section})"
+    return f"{response_text}\n\n(Chapter: {chapter}, Section: {section})"

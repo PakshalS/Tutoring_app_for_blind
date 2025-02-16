@@ -4,7 +4,7 @@ import '../models/message_model.dart';
 class ChatBubble extends StatelessWidget {
   final Message message;
 
-  ChatBubble({required this.message});
+  const ChatBubble({super.key, required this.message});
 
   @override
   Widget build(BuildContext context) {
