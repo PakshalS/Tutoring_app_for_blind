@@ -15,6 +15,5 @@ embed_json_data()  # Ensure embeddings are loaded
 def home():
     return jsonify({"message": "Welcome to the Flask RAG Chatbot API"})
 
-if __name__ == "__main__":
-    PORT = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=PORT)
+if __name__ == "_main_":
+    app.run(port=5000,host="0.0.0.0",debug=True)
