@@ -6,7 +6,7 @@ class ApiService {
   static Future<String> fetchChatbotResponse(String question) async {
     try {
       final response = await http.post(
-        Uri.parse('$backendUrl/'), // ✅ Corrected API endpoint
+        Uri.parse('$backendUrl/chatbot'), // ✅ Corrected API endpoint
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({'question': question}),
       );

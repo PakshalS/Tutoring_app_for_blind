@@ -33,8 +33,7 @@ def query_gemini_api(prompt: str):
         return f"Error: {e}"
 
 def generate_response(query: str):
-    """Generates a detailed response using the Gemini API and FAISS context retrieval."""
-    
+    """Retrieves best match and generates response using Gemini API."""
     retrieved_docs = retriever.get_relevant_documents(query)
     
     if retrieved_docs:
@@ -42,14 +41,15 @@ def generate_response(query: str):
         metadata = retrieved_docs[0].metadata
         chapter = metadata.get("chapter", "Unknown Chapter")
         section = metadata.get("section", "Unknown Section")
-        
-        # Explicit instruction for a detailed explanation
-        prompt = (f"Using the following context, provide a detailed explanation for the question, "
-                  f"including a step-by-step calculation and an example if applicable:\n\n"
-                  f"Context: {best_match}\n\n"
-                  f"Question: {query}\n\nDetailed Answer:")
+
+        # ✅ Keep the context under 500 words (Reduce API processing time)
+        best_match = " ".join(best_match.split()[:500])
+
+        # ✅ Optimized prompt for Gemini
+        prompt = (f"Answer the question concisely but thoroughly using this information:\n"
+                  f"{best_match}\n\nQuestion: {query}\nAnswer:")
     else:
-        prompt = f"Provide a detailed answer to the following question, including an example if applicable:\n\nQuestion: {query}\n\nDetailed Answer:"
+        prompt = f"Provide a detailed answer to:\n\nQuestion: {query}\nAnswer:"
 
     response_text = query_gemini_api(prompt)
 

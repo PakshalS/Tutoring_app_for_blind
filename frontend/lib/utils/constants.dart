@@ -1,1 +1,1 @@
-const String backendUrl = "http://10.0.2.2:8000/chatbot";
+const String backendUrl = "https://bot-api-3q1b.onrender.com";
