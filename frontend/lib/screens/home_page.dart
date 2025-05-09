@@ -113,23 +113,21 @@ class HomePage extends StatelessWidget {
               letterSpacing: 1.2, // Premium typography
             ),
           ),
-          actions: [
-            IconButton(
-              icon: const Icon(
-                Icons.logout,
-                size: 36, // Larger icon for accessibility
-                color: Colors.black,
-              ),
-              onPressed: () {
-                authService.signOut();
-                Navigator.pushAndRemoveUntil(
-                  context,
-                  MaterialPageRoute(builder: (context) => const LoginPage()),
-                  (Route<dynamic> route) => false,
-                );
-              },
-            )
-          ],
+          leading: IconButton(
+            icon: const Icon(
+              Icons.logout,
+              size: 36, // Larger icon for accessibility
+              color: Colors.black,
+            ),
+            onPressed: () {
+              authService.signOut();
+              Navigator.pushAndRemoveUntil(
+                context,
+                MaterialPageRoute(builder: (context) => const LoginPage()),
+                (Route<dynamic> route) => false,
+              );
+            },
+          ),
         ),
       ),
     );

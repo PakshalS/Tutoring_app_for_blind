@@ -110,32 +110,37 @@ class _VoiceWrapperState extends State<VoiceWrapper> {
   }
 
   TTSService get _ttsService => TTSService();
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: GestureDetector(
-        onTap: _handleTap,
-        behavior: HitTestBehavior.translucent, // Catch all taps
-        child: widget.child,
-      ),
-      floatingActionButton: Semantics(
-        label: 'Start voice input',
-        hint: 'Tap to begin voice command input',
-        child: FloatingActionButton(
-          onPressed: _startListening,
-          backgroundColor: Colors.yellow[700], // Bright yellow for contrast
-          elevation: 8, // Shadow for premium feel
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(16), // Rounded edges
-          ),
-          child: Icon(
-            Icons.mic,
-            size: 36, // Larger icon for accessibility
-            color: Colors.black, // High contrast
+    return Stack(
+      children: [
+        GestureDetector(
+          onTap: _handleTap,
+          behavior: HitTestBehavior.translucent, // Catch all taps
+          child: widget.child,
+        ),
+        Positioned(
+          top: 50,
+          right: 16, // 👈 Position it to bottom left
+          child: Semantics(
+            label: 'Start voice input',
+            hint: 'Tap to begin voice command input',
+            child: FloatingActionButton(
+              onPressed: _startListening,
+              backgroundColor: Colors.yellow[700],
+              elevation: 8,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: const Icon(
+                Icons.mic,
+                size: 36,
+                color: Colors.black,
+              ),
+            ),
           ),
         ),
-      ),
+      ],
     );
   }
 }
