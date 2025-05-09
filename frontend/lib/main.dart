@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/screens/auth/login_page.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:frontend/widgets/auth_wrapper.dart';
+
+final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,12 +16,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      navigatorKey: navigatorKey, // 👈 Attach it here
       debugShowCheckedModeBanner: false, // Removes the debug banner
-      title: 'Tutoring App',
+      title: 'Exam Preparation Platform', // Updated title for accessibility
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LoginPage(),
+      home: const AuthWrapper(), // Use AuthWrapper to handle auth state
     );
   }
 }
