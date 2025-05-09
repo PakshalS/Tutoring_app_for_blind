@@ -2,6 +2,7 @@ import json
 import os
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
+from langchain_huggingface import HuggingFaceEmbeddings 
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.schema import Document
 from dotenv import load_dotenv
@@ -84,15 +85,12 @@ def embed_json_data():
     print("🔹 Creating FAISS index...")
     documents = load_json_data()
 
-    # ✅ Optimized chunk processing (lower overlap)
     text_splitter = CharacterTextSplitter(chunk_size=500, chunk_overlap=50)
     chunks = text_splitter.split_documents(documents)
 
-    # ✅ Use a small, fast embedding model
     embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-small-en-v1.5")
     vector_store = FAISS.from_documents(chunks, embeddings)
 
-    # ✅ Save FAISS index locally
     vector_store.save_local(FAISS_INDEX_PATH)
     print("✅ FAISS Indexing completed.")
     return "FAISS index created successfully."
@@ -103,6 +101,5 @@ def get_vector_store():
         print("⚠️ FAISS index missing! Creating it now...")
         embed_json_data()
     
-    # ✅ Load FAISS with small, optimized embeddings
     embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-small-en-v1.5")
     return FAISS.load_local(FAISS_INDEX_PATH, embeddings, allow_dangerous_deserialization=True)
