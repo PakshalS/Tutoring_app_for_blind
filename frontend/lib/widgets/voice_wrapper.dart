@@ -16,131 +16,187 @@ class VoiceWrapper extends StatefulWidget {
 class _VoiceWrapperState extends State<VoiceWrapper> {
   late stt.SpeechToText _speech;
   String _lastWords = '';
-  int _tapCount = 0;
+  DateTime? _pressStartTime;
+  bool _isListening = false;
+  bool _isSpeechInitialized = false;
   DateTime? _lastTapTime;
-  static const _tripleTapDuration =
-      Duration(milliseconds: 500); // Time window for triple tap
+  static const _minTapInterval =
+      Duration(milliseconds: 500); // Prevent rapid taps
 
   @override
   void initState() {
     super.initState();
     _speech = stt.SpeechToText();
+    _initializeSpeech();
   }
 
-  void _handleTap() {
-    final now = DateTime.now();
-    if (_lastTapTime == null ||
-        now.difference(_lastTapTime!) > _tripleTapDuration) {
-      _tapCount = 1;
+  Future<void> _initializeSpeech() async {
+    try {
+      final available = await _speech.initialize(
+        onStatus: (status) {
+          debugPrint("Speech status: $status");
+          if (status == 'notAvailable' || status == 'error') {
+            setState(() => _isSpeechInitialized = false);
+            _showSnackBar("Speech recognition is not available.");
+          }
+        },
+      );
+      setState(() => _isSpeechInitialized = available);
+      if (!available) {
+        _showSnackBar("Speech recognition not available on this device.");
+      }
+    } catch (e) {
+      debugPrint("Speech initialization exception: $e");
+      setState(() => _isSpeechInitialized = false);
+      _showSnackBar("Failed to initialize speech recognition.");
+    }
+  }
+
+  void _onLongPressStart(_) {
+    if (_isListening || !_isSpeechInitialized) return;
+    _pressStartTime = DateTime.now();
+  }
+
+  void _onLongPressEnd(_) {
+    if (_pressStartTime == null || _isListening || !_isSpeechInitialized)
+      return;
+    final duration = DateTime.now().difference(_pressStartTime!);
+    if (duration.inSeconds >= 2) {
+      debugPrint("Long press detected for ${duration.inSeconds}s ✅");
+      _startListening(source: 'gesture');
     } else {
-      _tapCount++;
+      debugPrint("Hold not long enough: ${duration.inSeconds}s ❌");
+    }
+    _pressStartTime = null;
+  }
+
+  void _onFabTap() {
+    final now = DateTime.now();
+    // Prevent rapid taps
+    if (_lastTapTime != null &&
+        now.difference(_lastTapTime!) < _minTapInterval) {
+      debugPrint("Tap ignored: too soon after previous tap");
+      return;
     }
     _lastTapTime = now;
 
-    if (_tapCount == 4) {
-      _startListening();
-      _tapCount = 0; // Reset tap count
-    }
-  }
-
-  Future<void> _startListening() async {
-    final available = await _speech.initialize();
-    if (!available) {
-      debugPrint("Speech not available");
-      _ttsService.speak("Speech recognition not available");
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            "Speech recognition not available",
-            style: TextStyle(
-              fontSize: 20, // Larger text for accessibility
-              color: Colors.black, // High contrast
-            ),
-          ),
-          backgroundColor: Colors.yellow[700], // Bright yellow for contrast
-        ),
-      );
+    if (!_isSpeechInitialized) {
+      _showSnackBar(
+          "Speech recognition not available. Please try again later.");
+      _initializeSpeech(); // Attempt to reinitialize
       return;
     }
 
-    await TTSService().stop(); // Stop any ongoing TTS
-    _ttsService.speak("Voice input started");
+    if (_isListening) {
+      debugPrint("FAB tapped while listening, stopping...");
+      _stopListening();
+    } else {
+      debugPrint("FAB tapped, starting listening...");
+      _startListening(source: 'fab');
+    }
+  }
 
-    setState(() {
-      _lastWords = '';
-    });
+  Future<void> _startListening({required String source}) async {
+    if (_isListening || !_isSpeechInitialized) {
+      debugPrint(
+          "Cannot start listening: already listening or not initialized");
+      return;
+    }
 
-    _speech.listen(
-      onResult: (val) {
-        setState(() => _lastWords = val.recognizedWords);
+    try {
+      await TTSService().stop(); // Stop any ongoing TTS
+      setState(() {
+        _isListening = true;
+        _lastWords = '';
+      });
 
-        if (val.finalResult && _lastWords.trim().isNotEmpty) {
-          final service = VoiceCommandService(chapterMap);
-          service.handleCommand(_lastWords);
+      _speech.listen(
+        onResult: (val) {
+          setState(() => _lastWords = val.recognizedWords);
+          if (val.finalResult && _lastWords.trim().isNotEmpty) {
+            final service = VoiceCommandService(chapterMap);
+            service.handleCommand(_lastWords);
+            _stopListening();
+          }
+        },
+        onSoundLevelChange: (level) {
+          debugPrint("Sound level: $level");
+        },
+        listenFor: const Duration(seconds: 10),
+        pauseFor: const Duration(seconds: 4),
+        localeId: 'en_US',
+      );
+
+      // Monitor status changes for errors
+      _speech.statusListener = (status) {
+        debugPrint("Speech status: $status");
+        if (status == 'error' || status == 'notRecognized') {
+          _showSnackBar("Speech recognition failed. Please try again.");
           _stopListening();
         }
-      },
-      listenFor: const Duration(seconds: 10),
-      pauseFor: const Duration(seconds: 4),
-      localeId: 'en_US',
-    );
+      };
 
-    Future.delayed(const Duration(seconds: 10), () {
-      if (_lastWords.isEmpty && _speech.isListening) {
-        _ttsService.speak("No input received");
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(
-              "Sorry, no input received",
-              style: TextStyle(
-                fontSize: 20, // Larger text for accessibility
-                color: Colors.black, // High contrast
-              ),
-            ),
-            backgroundColor: Colors.yellow[700], // Bright yellow for contrast
-          ),
-        );
-        _stopListening();
-      }
-    });
+      // Timeout if no input is received
+      Future.delayed(const Duration(seconds: 10), () {
+        if (_isListening && _lastWords.isEmpty) {
+          _showSnackBar("Sorry, no input received.");
+          _stopListening();
+        }
+      });
+
+      debugPrint("Started listening via $source");
+    } catch (e) {
+      debugPrint("Error starting speech recognition: $e");
+      _showSnackBar("Failed to start speech recognition.");
+      setState(() => _isListening = false);
+    }
   }
 
   void _stopListening() {
-    _speech.stop();
+    if (!_isListening) return;
+    try {
+      _speech.stop();
+      setState(() => _isListening = false);
+      debugPrint("Stopped listening");
+    } catch (e) {
+      debugPrint("Error stopping speech recognition: $e");
+      _showSnackBar("Failed to stop speech recognition.");
+    }
   }
 
-  TTSService get _ttsService => TTSService();
+  void _showSnackBar(String message) {
+    if (!mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text(message)),
+    );
+  }
+
+  @override
+  void dispose() {
+    _stopListening();
+    _speech.cancel(); // Clean up speech resources
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        GestureDetector(
-          onTap: _handleTap,
-          behavior: HitTestBehavior.translucent, // Catch all taps
-          child: widget.child,
+    return Scaffold(
+      body: GestureDetector(
+        onLongPressStart: _onLongPressStart,
+        onLongPressEnd: _onLongPressEnd,
+        behavior: HitTestBehavior.translucent,
+        child: widget.child,
+      ),
+      floatingActionButton: Semantics(
+        label: 'MIC',
+        child: FloatingActionButton(
+          onPressed: _onFabTap,
+          tooltip: _isListening ? 'Stop Listening' : 'Start Listening',
+          backgroundColor: _isListening ? Colors.red : Colors.yellow,
+          child: Icon(_isListening ? Icons.mic_off : Icons.mic),
         ),
-        Positioned(
-          top: 50,
-          right: 16, // 👈 Position it to bottom left
-          child: Semantics(
-            label: 'Start voice input',
-            hint: 'Tap to begin voice command input',
-            child: FloatingActionButton(
-              onPressed: _startListening,
-              backgroundColor: Colors.yellow[700],
-              elevation: 8,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(16),
-              ),
-              child: const Icon(
-                Icons.mic,
-                size: 36,
-                color: Colors.black,
-              ),
-            ),
-          ),
-        ),
-      ],
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endTop,
     );
   }
 }

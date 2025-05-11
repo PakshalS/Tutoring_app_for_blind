@@ -1,0 +1,1374 @@
+{
+  "exercise": {
+    "questions": [
+      {
+        "question": "What is data interpretation?",
+        "answer": "b) The process of analyzing and calculating values from provided data",
+        "options": [
+          "a) The process of creating data",
+          "b) The process of analyzing and calculating values from provided data",
+          "c) The method of storing data",
+          "d) The process of deleting unnecessary data"
+        ]
+      },
+      {
+        "question": "How is data presented in tabular data interpretation?",
+        "answer": "a) Using rows and columns",
+        "options": [
+          "a) Using rows and columns",
+          "b) Using circular charts",
+          "c) Using line graphs",
+          "d) Using descriptive paragraphs"
+        ]
+      },
+      {
+        "question": "What does a pie chart represent?",
+        "answer": "b) A proportional distribution of a total value",
+        "options": [
+          "a) Trends over time",
+          "b) A proportional distribution of a total value",
+          "c) A comparison of categories",
+          "d) Numerical data arranged in rows and columns"
+        ]
+      },
+      {
+        "question": "What is the total angle of a pie chart?",
+        "answer": "d) 360 degrees",
+        "options": [
+          "a) 90 degrees",
+          "b) 180 degrees",
+          "c) 270 degrees",
+          "d) 360 degrees"
+        ]
+      },
+      {
+        "question": "What is the purpose of a bar graph?",
+        "answer": "b) To compare data across categories",
+        "options": [
+          "a) To represent proportions of a total value",
+          "b) To compare data across categories",
+          "c) To track changes over time",
+          "d) To solve caselet-based problems"
+        ]
+      },
+      {
+        "question": "The area of an equilateral triangle is 49√3 m². Find the height and side.",
+        "answer": "b) 14 m, 7√3 m",
+        "options": [
+          "a) 10 m, 7 m",
+          "b) 14 m, 7√3 m",
+          "c) 7 m, 7 m",
+          "d) 7√3 m, 14 m"
+        ]
+      },
+      {
+        "question": "The area of a square is 1352 m². Find the perimeter and diagonal length.",
+        "answer": "b) 104√2 m, 52 m",
+        "options": [
+          "a) 24 m, 26 m",
+          "b) 104√2 m, 52 m",
+          "c) 26 m, 104 m",
+          "d) 16 m, 16√2 m"
+        ]
+      },
+      {
+        "question": "In a rectangle, the diagonal is 9 times its length. Find the ratio of length to breadth.",
+        "answer": "a) 1:4√5",
+        "options": ["a) 1:4√5", "b) 1:3√3", "c) 2:3", "d) 5:7"]
+      },
+
+      {
+        "question": "In 330 litres of mixture of milk and water, water is only 24%. The milkman sold 80 litres of this mixture and then he added 60 litres of pure milk and 26 litres of pure water in the remaining mixture. What is the percentage of water in the final mixture?",
+        "answer": "b) 25.59%",
+        "options": [
+          "a) 39.70%",
+          "b) 25.59%",
+          "c) 34.68%",
+          "d) 37.34%",
+          "e) 16.89%"
+        ]
+      },
+      {
+        "question": "A paint maker has three different qualities of paint. 806 barrels of 1st quality, 930 barrels of 2nd quality, and 992 barrels of 3rd quality. Find the least possible number of buckets of equal size in which different paints of different qualities can be filled without mixing?",
+        "answer": "d) 44",
+        "options": ["a) 34", "b) 46", "c) 26", "d) 44", "e) None of these"]
+      },
+      {
+        "question": "Two vessels A and B contain milk and water mixed in the ratio 4:3 and 2:3. The ratio in which these mixtures should be mixed to form a new mixture containing half milk and half water is?",
+        "answer": "a) 7:5",
+        "options": ["a) 7:5", "b) 6:5", "c) 5:6", "d) 4:3"]
+      },
+      {
+        "question": "A milkman makes 20% profit by selling milk mixed with water at Rs. 9 per litre. If the cost price of 1 litre of pure milk is Rs. 10, then the ratio of milk and water in the said mixture is?",
+        "answer": "a) 3:1",
+        "options": ["a) 3:1", "b) 4:1", "c) 3:2", "d) 4:3"]
+      },
+      {
+        "question": "In what ratio wheat costing Rs.12 per kg should be mixed with wheat costing Rs. 20 per kg so that the cost of resulting mixture is Rs.15 per kg?",
+        "answer": "c) 3:2",
+        "options": ["a) 2:1", "b) 3:5", "c) 3:2", "d) 2:3", "e) 5:3"]
+      },
+      {
+        "question": "In what ratio 30% alcohol solution should be mixed with 40% alcohol solution so that the concentration of alcohol in the resulting mixture is 32%?",
+        "answer": "d) 2:3",
+        "options": ["a) 3:1", "b) 4:1", "c) 3:2", "d) 2:3", "e) 2:1"]
+      },
+      {
+        "question": "In what ratio should water and 90% milk solution be mixed, so that a 60% milk solution is formed?",
+        "answer": "b) 1:2",
+        "options": ["a) 2:1", "b) 1:2", "c) 1:4", "d) 4:1", "e) 3:4"]
+      },
+      {
+        "question": "How much quantity of sugar costing Rs. 20 per Kg should be mixed with 60kg of sugar costing Rs.30 per kg so that cost of the mixture formed is Rs. 24 per kg?",
+        "answer": "a) 30 kg",
+        "options": ["a) 30 kg", "b) 90 kg", "c) 45 kg", "d) 50 kg", "e) 48 kg"]
+      },
+      {
+        "question": "What quantity of wheat at Rs. 10 per kg should be mixed with 48 kgs of wheat at Rs. 6 per kg ,such that a profit of 25% is earned on selling the mixture at Rs. 10 per kg?",
+        "answer": "b) 48 kg",
+        "options": ["a) 52 Kg", "b) 48 kg", "c) 36 kg", "d) 40 kg", "e) 46 kg"]
+      },
+      {
+        "question": "A solution having milk and water in the ratio 2 : 5 is mixed with another solution having the milk and water ratio 5 : 2. The resultant solution has milk and water in equal quantities. In what ratio were the two solutions mixed?",
+        "answer": "a) 2:1",
+        "options": ["a) 2:1", "b) 1:2", "c) 1:1", "d) 3:1", "e) 1:3"]
+      },
+      {
+        "question": "Rs 15000 is lent out in two parts – one at 8% p.a simple interest and the other at 10% p.a simple interest. If at the end of the first year, the total interest received is Rs 1,350 then, find the amount invested at 8% p.a simple interest.",
+        "answer": "a) Rs 9,000",
+        "options": [
+          "a) Rs 9,000",
+          "b) Rs 8,000",
+          "c) Rs 6,000",
+          "d) Rs 7,500",
+          "e) Rs 10,000"
+        ]
+      },
+      {
+        "question": "From a vessel containing 100 litre pure milk, 10 litre of milk is removed and replaced with water. The process is repeated once again. What is the quantity of pure milk left in the solution?",
+        "answer": "c) 81 litre",
+        "options": [
+          "a) 90 litre",
+          "b) 80 litre",
+          "c) 81 litre",
+          "d) 72 litre",
+          "e) 79 litre"
+        ]
+      },
+      {
+        "question": "What is the next number in the Fibonacci series 1, 1, 2, 3, 5, 8, 13?",
+        "answer": "b) 34",
+        "options": ["a) 21", "b) 34", "c) 18", "d) 23"]
+      },
+      {
+        "question": "What is the missing number in the series: 2, 8, 26, 62, 122, ?",
+        "answer": "a) 212",
+        "options": ["a) 212", "b) 202", "c) 132", "d) 142"]
+      },
+      {
+        "question": "Which number is the odd one out in the series: 11, 18, 29, 42, 59, 80, 101?",
+        "answer": "c) 80",
+        "options": ["a) 59", "b) 42", "c) 80", "d) 29"]
+      },
+      {
+        "question": "What is the next term in the series: 4096, 5120, 6400, 8000, 10000?",
+        "answer": "b) 12000",
+        "options": ["a) 11000", "b) 12000", "c) 12500", "d) 14000"]
+      },
+      {
+        "question": "What is the rule for the following series: 154, 462, 231, 693, 346.5, 1039.5?",
+        "answer": "a) ×3, ÷2, ×3, ÷2, ×3",
+        "options": [
+          "a) ×3, ÷2, ×3, ÷2, ×3",
+          "b) ×2, ÷3, ×2, ÷3, ×2",
+          "c) ÷2, ×3, ÷2, ×3, ÷2",
+          "d) ×5, ÷3, ×5, ÷3, ×5"
+        ]
+      },
+      {
+        "question": "What does a number system deal with?",
+        "answer": "b) Writing numbers",
+        "options": [
+          "a) Writing words",
+          "b) Writing numbers",
+          "c) Adding numbers",
+          "d) Counting numbers"
+        ]
+      },
+      {
+        "question": "What is the purpose of a number system?",
+        "answer": "a) To count and measure",
+        "options": [
+          "a) To count and measure",
+          "b) To plot graphs",
+          "c) To create patterns",
+          "d) To simplify calculations"
+        ]
+      },
+      {
+        "question": "What is the base of the Decimal Number System?",
+        "answer": "c) Ten",
+        "options": ["a) Two", "b) Eight", "c) Ten", "d) Sixteen"]
+      },
+      {
+        "question": "Which number system uses the digits 0-1?",
+        "answer": "a) Binary",
+        "options": ["a) Binary", "b) Decimal", "c) Octal", "d) Hexadecimal"]
+      },
+      {
+        "question": "Which of the following is an imaginary number?",
+        "answer": "b) Seven i",
+        "options": ["a) Two", "b) Seven i", "c) Three", "d) Negative Four"]
+      },
+      {
+        "question": "Which digit is not used in the Octal number system?",
+        "answer": "c) 8",
+        "options": ["a) 7", "b) 6", "c) 8", "d) 5"]
+      },
+      {
+        "question": "What is the base of the hexadecimal number system?",
+        "answer": "d) 16",
+        "options": ["a) 8", "b) 10", "c) 2", "d) 16"]
+      },
+      {
+        "question": "Which of these is a valid binary number?",
+        "answer": "b) 10101",
+        "options": ["a) 12345", "b) 10101", "c) 12010", "d) 20201"]
+      },
+      {
+        "question": "What does the hexadecimal digit 'A' represent in decimal?",
+        "answer": "b) 10",
+        "options": ["a) 11", "b) 10", "c) 9", "d) 12"]
+      },
+      {
+        "question": "What is the decimal equivalent of binary 1101?",
+        "answer": "c) 13",
+        "options": ["a) 11", "b) 12", "c) 13", "d) 14"]
+      },
+      {
+        "question": "Convert decimal 15 to binary.",
+        "answer": "d) 1111",
+        "options": ["a) 1010", "b) 1100", "c) 1110", "d) 1111"]
+      },
+      {
+        "question": "What is the octal equivalent of binary 101010?",
+        "answer": "a) 52",
+        "options": ["a) 52", "b) 51", "c) 62", "d) 50"]
+      },
+      {
+        "question": "Which of the following is not a positional number system?",
+        "answer": "d) Roman",
+        "options": ["a) Decimal", "b) Binary", "c) Hexadecimal", "d) Roman"]
+      },
+      {
+        "question": "In a number system with base 5, which digits are used?",
+        "answer": "c) 0 to 4",
+        "options": ["a) 0 to 5", "b) 1 to 5", "c) 0 to 4", "d) 1 to 4"]
+      },
+      {
+        "question": "Which of the following conversions is correct?",
+        "answer": "c) Binary 1001 = Decimal 9",
+        "options": [
+          "a) Binary 1010 = Decimal 11",
+          "b) Binary 1111 = Decimal 14",
+          "c) Binary 1001 = Decimal 9",
+          "d) Binary 1100 = Decimal 13"
+        ]
+      },
+      {
+        "question": "What is the value of 5!?",
+        "answer": "a) 120",
+        "options": ["a) 120", "b) 60", "c) 24", "d) 100"]
+      },
+      {
+        "question": "What is the formula for the number of permutations of 'n' things taken 'r' at a time?",
+        "answer": "a) nPr = n! / (n - r)!",
+        "options": [
+          "a) nPr = n! / (n - r)!",
+          "b) nPr = n! × (n - r)!",
+          "c) nPr = n × r!",
+          "d) nPr = r × n!"
+        ]
+      },
+      {
+        "question": "How many permutations can be made from 3 objects A, B, and C?",
+        "answer": "b) 6",
+        "options": ["a) 3", "b) 6", "c) 9", "d) 4"]
+      },
+      {
+        "question": "What is the formula for combination?",
+        "answer": "a) nCr = n! / (r! × (n - r)!)",
+        "options": [
+          "a) nCr = n! / (r! × (n - r)!)",
+          "b) nCr = n! × (r! × (n - r)!)",
+          "c) nCr = (n - r)! / r!",
+          "d) nCr = n × r!"
+        ]
+      },
+      {
+        "question": "What is the main difference between permutation and combination?",
+        "answer": "a) Permutation considers the order, while combination does not",
+        "options": [
+          "a) Permutation considers the order, while combination does not",
+          "b) Permutation does not consider the order, while combination does",
+          "c) Both consider the order",
+          "d) Neither considers the order"
+        ]
+      },
+      {
+        "question": "In how many ways can the letters of 'RAINBOW' be arranged to always start with A?",
+        "answer": "a) 720",
+        "options": ["a) 720", "b) 360", "c) 840", "d) 270", "e) 620"]
+      },
+      {
+        "question": "In how many ways can the letters of 'RAINBOW' be arranged to never end with W?",
+        "answer": "a) 4320",
+        "options": ["a) 240", "b) 360", "c) 720", "d) 1440", "e) 4320"]
+      },
+      {
+        "question": "In how many ways can the letters of 'RAINBOW' be arranged without disturbing relative positions of vowels and consonants?",
+        "answer": "e) 144",
+        "options": ["a) 360", "b) 240", "c) 180", "d) 120", "e) 144"]
+      },
+      {
+        "question": "In how many ways can the letters of 'RAINBOW' be arranged with all vowels together?",
+        "answer": "a) 360",
+        "options": ["a) 360", "b) 720", "c) 120", "d) 240", "e) 520"]
+      },
+      {
+        "question": "In how many ways can the letters of 'RAINBOW' be arranged without all consonants together?",
+        "answer": "c) 4464",
+        "options": ["a) 5040", "b) 4050", "c) 4464", "d) 6040", "e) 6444"]
+      },
+      {
+        "question": "In how many ways can the letters of 'RAINBOW' be arranged with consonants at odd places?",
+        "answer": "a) 144",
+        "options": ["a) 144", "b) 120", "c) 240", "d) 360", "e) 180"]
+      },
+      {
+        "question": "How many different signals can be formed by arranging 4 out of 7 different flags in a row?",
+        "answer": "e) 840",
+        "options": ["a) 120", "b) 720", "c) 256", "d) 360", "e) 840"]
+      },
+      {
+        "question": "In how many ways can four vehicles be parked in a row of six parking slots?",
+        "answer": "b) 360",
+        "options": ["a) 180", "b) 360", "c) 240", "d) 120", "e) 96"]
+      },
+      {
+        "question": "In how many ways can 3 boys and 3 girls be arranged in a row starting with a boy and ending with a girl?",
+        "answer": "d) 72",
+        "options": ["a) 144", "b) 36", "c) 216", "d) 72", "e) 108"]
+      },
+      {
+        "question": "In how many ways can 3 boys and 3 girls be arranged with all girls together?",
+        "answer": "a) 144",
+        "options": ["a) 144", "b) 36", "c) 216", "d) 72", "e) 108"]
+      },
+      {
+        "question": "In how many ways can 3 boys and 3 girls be arranged sitting alternately?",
+        "answer": "d) 72",
+        "options": ["a) 144", "b) 36", "c) 216", "d) 72", "e) 108"]
+      },
+      {
+        "question": "In how many ways can 3 boys and 3 girls be arranged with no two boys together?",
+        "answer": "a) 144",
+        "options": ["a) 144", "b) 36", "c) 216", "d) 72", "e) 108"]
+      },
+      {
+        "question": "The number of ways to arrange ten persons around a circular table is",
+        "answer": "e) 9!",
+        "options": ["a) 10!", "b) 10! - 1", "c) 10! / 2", "d) 2.9!", "e) 9!"]
+      },
+      {
+        "question": "The number of ways to arrange ten different colored roses in a garland is",
+        "answer": "a) 9!/2",
+        "options": ["a) 9!/2", "b) 9!", "c) 10!/2", "d) 9! × 2", "e) 10! × 2"]
+      },
+      {
+        "question": "Hyderabad is connected to Vijayawada with three highways and Vijayawada is connected to Chennai with two highways. In how many ways can one travel from Hyderabad to Chennai via Vijayawada?",
+        "answer": "b) 6",
+        "options": ["a) 5", "b) 6", "c) 3", "d) 2", "e) 1"]
+      },
+      {
+        "question": "30C19 + 30C12 - 30C18 - 30C11 =",
+        "answer": "c) 0",
+        "options": ["a) 19", "b) 12", "c) 0", "d) 11", "e) 18"]
+      },
+      {
+        "question": "From a group of twelve students, in how many ways can a teacher select nine students to represent a class?",
+        "answer": "d) 220",
+        "options": ["a) 110", "b) 120", "c) 108", "d) 220", "e) 160"]
+      },
+      {
+        "question": "From a group of 15 persons, in how many ways can 5 be selected if two particular persons are always included?",
+        "answer": "b) 286",
+        "options": ["a) 143", "b) 286", "c) 270", "d) 220", "e) 210"]
+      },
+      {
+        "question": "From a group of 15 persons, in how many ways can 5 be selected if one particular person is always included and another always excluded?",
+        "answer": "b) 715",
+        "options": ["a) 720", "b) 715", "c) 680", "d) 360", "e) 840"]
+      },
+      {
+        "question": "From 8 Gujarathis and 6 Tamilians, in how many ways can a committee of 6 be formed with exactly 4 Gujarathis?",
+        "answer": "b) 1050",
+        "options": ["a) 600", "b) 1050", "c) 1540", "d) 1200", "e) 720"]
+      },
+      {
+        "question": "From 8 Gujarathis and 6 Tamilians, in how many ways can a committee of 6 be formed with at least 3 Tamilians?",
+        "answer": "a) 1540",
+        "options": ["a) 1540", "b) 1588", "c) 1589", "d) 1169", "e) 469"]
+      },
+      {
+        "question": "From 8 Gujarathis and 6 Tamilians, in how many ways can a committee of 6 be formed with at most 2 Gujarathis?",
+        "answer": "e) 469",
+        "options": ["a) 449", "b) 420", "c) 448", "d) 468", "e) 469"]
+      },
+      {
+        "question": "From a basket with 5 red, 4 green and 2 yellow balls, in how many ways can 3 balls be selected with all different colors?",
+        "answer": "c) 40",
+        "options": ["a) 60", "b) 50", "c) 40", "d) 120", "e) 72"]
+      },
+      {
+        "question": "From a basket with 5 red, 4 green and 2 yellow balls, in how many ways can 3 balls be selected with all same color?",
+        "answer": "a) 14",
+        "options": ["a) 14", "b) 18", "c) 21", "d) 28", "e) 46"]
+      },
+      {
+        "question": "From a basket with 5 red, 4 green and 2 yellow balls, in how many ways can 3 balls be selected with exactly 1 green?",
+        "answer": "b) 42",
+        "options": ["a) 49", "b) 42", "c) 84", "d) 63", "e) 56"]
+      },
+      {
+        "question": "What is the compounded ratio of 17:23, 115:153, and 18:25?",
+        "answer": "b) 2:5",
+        "options": ["a) 1:3", "b) 2:5", "c) 5:7", "d) 3:4"]
+      },
+      {
+        "question": "In the proportion 3:27 ∷ 5:?, what is the missing term?",
+        "answer": "b) 45",
+        "options": ["a) 15", "b) 45", "c) 25", "d) 50"]
+      },
+      {
+        "question": "What is the formula for finding the third proportion in a ratio a: b = b: c?",
+        "answer": "c) c = b² / a",
+        "options": [
+          "a) a × b = c",
+          "b) c = (b × b) / a",
+          "c) c = b² / a",
+          "d) c = a × b"
+        ]
+      },
+      {
+        "question": "If a: b = 3:4 and c: d = 5:6, what is the fourth proportion to a, b, and c?",
+        "answer": "b) 15",
+        "options": ["a) 12", "b) 15", "c) 10", "d) 20"]
+      },
+      {
+        "question": "The mean proportional between 14 and 15 is:",
+        "answer": "b) 14.5",
+        "options": ["a) 14.0", "b) 14.5", "c) 15.0", "d) 13.5"]
+      },
+      {
+        "question": "If x:y = 4:3, then (3x+2y) : (3x-2y) is:",
+        "answer": "a) 3:1",
+        "options": ["a) 3:1", "b) 1:3", "c) 9:1", "d) 1:9", "e) None of these"]
+      },
+      {
+        "question": "If (3x+2y)/(2x+3y) = 12/13, then find x:y",
+        "answer": "b) 4:7",
+        "options": ["a) 7:4", "b) 4:7", "c) 3:2", "d) 4:9", "e) 2:3"]
+      },
+      {
+        "question": "If a:b = 2:3 and b:c = 5:7, then find a:b:c",
+        "answer": "a) 10:15:21",
+        "options": [
+          "a) 10:15:21",
+          "b) 10:21:15",
+          "c) 9:12:14",
+          "d) 12:7:18",
+          "e) 10:21:14"
+        ]
+      },
+      {
+        "question": "If a:b = 1:2, b:c = 4:3 and c:d = 1:5, then find a:d",
+        "answer": "d) 2:15",
+        "options": ["a) 4:3", "b) 2:3", "c) 2:5", "d) 2:15", "e) 1:5"]
+      },
+      {
+        "question": "Find the fourth proportional of the numbers 3, 6 and 4",
+        "answer": "b) 8",
+        "options": ["a) 4.5", "b) 8", "c) 2", "d) 4", "e) None of these"]
+      },
+      {
+        "question": "Find the mean proportion of 16 and 81",
+        "answer": "c) 36",
+        "options": ["a) 48.5", "b) 32.5", "c) 36", "d) 1485", "e) 6.5"]
+      },
+      {
+        "question": "Find the duplicate ratio of 3:4",
+        "answer": "d) 9:16",
+        "options": ["a) √3:√4", "b) 4:3", "c) 16:9", "d) 9:16", "e) 2:√3"]
+      },
+      {
+        "question": "Find the sub-duplicate ratio of 49:36",
+        "answer": "c) 7:6",
+        "options": ["a) 49²:36", "b) 36:49", "c) 7:6", "d) 6:7", "e) 49:36²"]
+      },
+      {
+        "question": "A sum of Rs 2,40,000 is distributed among three persons A, B and C in the ratio 3:4:5. What is B's Share",
+        "answer": "b) Rs 80,000",
+        "options": [
+          "a) Rs 60,000",
+          "b) Rs 80,000",
+          "c) Rs 90,000",
+          "d) Rs 1,00,000",
+          "e) Rs 96,000"
+        ]
+      },
+      {
+        "question": "Mohit, Praveen and Paul have thirty marbles between them. Which of the following cannot be the ratio of the numbers of marbles with Mohit, Praveen and Paul",
+        "answer": "d) 1:2:4",
+        "options": ["a) 1:1:1", "b) 6:4:5", "c) 2:3:5", "d) 1:2:4", "e) 1:2:3"]
+      },
+      {
+        "question": "There are three numbers p, q and r such that three times p is equal to four times q. Three times q is equal to four times r. If the sum of the numbers is 148, p exceeds r by",
+        "answer": "e) 28",
+        "options": ["a) 7", "b) 14", "c) 21", "d) 12", "e) 28"]
+      },
+      {
+        "question": "Three times a number is equal to two times of another number. Find the ratio of three times the sum and five times the difference of the two numbers",
+        "answer": "d) 3",
+        "options": ["a) 2", "b) 4", "c) 1", "d) 3", "e) 6"]
+      },
+      {
+        "question": "A man has 50 paise, 1 rupee and 5 rupee coins in the ratio of 2:2:1. Find the total amount he has given that the difference in the total value of 5 rupee and 1 rupee coin is Rs 15",
+        "answer": "e) Rs 30",
+        "options": ["a) Rs 15", "b) Rs 40", "c) Rs 25", "d) Rs 20", "e) Rs 30"]
+      },
+      {
+        "question": "6 times amount with P is equal to 4 times amount with Q is equal to 3 times amount with R. Find the ratio of P, Q and R",
+        "answer": "a) 2:3:4",
+        "options": ["a) 2:3:4", "b) 6:4:3", "c) 2:3:5", "d) 1:2:4", "e) 1:2:3"]
+      },
+      {
+        "question": "A father divides his property such that eldest son gets double the share of the second son and thrice the share of the third son. If his eldest son gets Rs 12,000 more than the youngest, find the share of the second son",
+        "answer": "c) Rs 9000",
+        "options": [
+          "a) Rs 6000",
+          "b) Rs 3000",
+          "c) Rs 9000",
+          "d) Rs 15000",
+          "e) Rs 18000"
+        ]
+      },
+      {
+        "question": "The present ages of the two friends A and B are in the ratio of 9:10. After 12 years the ratio of their respective ages will be 15:16. What is the present age of B in years",
+        "answer": "a) 40",
+        "options": ["a) 40", "b) 20", "c) 22", "d) 30", "e) 10"]
+      },
+      {
+        "question": "The annual incomes of Varun and Vikram are in the ratio of 8:3 and their annual expenditure are in the ratio of 4:1. If each of them saves Rs 20000 per annum, then what is the annual income of Varun",
+        "answer": "e) Rs 160000",
+        "options": [
+          "a) Rs 80000",
+          "b) Rs 140000",
+          "c) Rs 100000",
+          "d) Rs 120000",
+          "e) Rs 160000"
+        ]
+      },
+      {
+        "question": "What is the term for the amount of money borrowed or lent?",
+        "answer": "b) Principal",
+        "options": [
+          "a) Interest",
+          "b) Principal",
+          "c) Amount",
+          "d) Rate of interest"
+        ]
+      },
+      {
+        "question": "What is the formula for calculating Simple Interest?",
+        "answer": "a) Simple Interest = Principal × Rate × Time / 100",
+        "options": [
+          "a) Simple Interest = Principal × Rate × Time / 100",
+          "b) Simple Interest = Principal × Rate + Time",
+          "c) Simple Interest = Principal × Time / Rate",
+          "d) Simple Interest = Rate × Time / Principal"
+        ]
+      },
+      {
+        "question": "How is the total amount calculated in an interest transaction?",
+        "answer": "a) By adding the principal and interest",
+        "options": [
+          "a) By adding the principal and interest",
+          "b) By subtracting the interest from the principal",
+          "c) By multiplying the principal and interest",
+          "d) By dividing the principal by the interest"
+        ]
+      },
+      {
+        "question": "What is Compound Interest?",
+        "answer": "b) Interest calculated on the principal and accumulated interest",
+        "options": [
+          "a) Interest calculated on the principal only",
+          "b) Interest calculated on the principal and accumulated interest",
+          "c) Interest calculated at a fixed rate",
+          "d) Interest that decreases over time"
+        ]
+      },
+      {
+        "question": "What does 'time' refer to in the context of interest?",
+        "answer": "a) The duration for which the money is borrowed or deposited",
+        "options": [
+          "a) The duration for which the money is borrowed or deposited",
+          "b) The amount borrowed",
+          "c) The rate of interest per year",
+          "d) The total amount repaid"
+        ]
+      },
+      {
+        "question": "What is the simple interest on Rs.10,000 at 12% per annum for 5 years?",
+        "answer": "b) Rs.6000",
+        "options": [
+          "a) Rs.7000",
+          "b) Rs.6000",
+          "c) Rs.6200",
+          "d) Rs.5800",
+          "e) Rs.7500"
+        ]
+      },
+      {
+        "question": "What sum will fetch a simple interest of Rs.4125 in five and half years at 5% p.a.?",
+        "answer": "e) Rs.15000",
+        "options": [
+          "a) Rs.12000",
+          "b) Rs.18000",
+          "c) Rs.16000",
+          "d) Rs.11500",
+          "e) Rs.15000"
+        ]
+      },
+      {
+        "question": "In how much time will Rs.24000 at 6% p.a. simple interest yield Rs.9000 interest?",
+        "answer": "a) 75 months",
+        "options": [
+          "a) 75 months",
+          "b) 60 months",
+          "c) 120 months",
+          "d) 45 months",
+          "e) 100 months"
+        ]
+      },
+      {
+        "question": "A sum amounts to Rs.57600 in 5 years and Rs.48960 in 3 years at simple interest. Find the rate of interest.",
+        "answer": "e) 12% p.a.",
+        "options": [
+          "a) 10% p.a.",
+          "b) 14% p.a.",
+          "c) 15% p.a.",
+          "d) 6% p.a.",
+          "e) 12% p.a."
+        ]
+      },
+      {
+        "question": "At what rate of simple interest does a sum triple in ten years?",
+        "answer": "e) 20%",
+        "options": ["a) 12%", "b) 14%", "c) 16%", "d) 18%", "e) 20%"]
+      },
+      {
+        "question": "A sum doubles in six years at simple interest. In how many years will it become eight times itself?",
+        "answer": "d) 42",
+        "options": ["a) 36", "b) 48", "c) 50", "d) 42", "e) none of these"]
+      },
+      {
+        "question": "Find the compound interest on Rs.25000 at 20% p.a. compounded half-yearly for one year.",
+        "answer": "d) Rs.5250",
+        "options": [
+          "a) Rs.5670",
+          "b) Rs.2780",
+          "c) Rs.6285",
+          "d) Rs.5250",
+          "e) Rs.7289"
+        ]
+      },
+      {
+        "question": "A sum amounts to Rs.5500 in 5 years and Rs.6050 in 6 years at compound interest. Find the rate.",
+        "answer": "a) 10% p.a.",
+        "options": [
+          "a) 10% p.a.",
+          "b) 14% p.a.",
+          "c) 15% p.a.",
+          "d) 6% p.a.",
+          "e) 12% p.a."
+        ]
+      },
+      {
+        "question": "If compound interest in 5th and 6th year is Rs.400 and Rs.460 respectively, what is the rate?",
+        "answer": "d) 15%",
+        "options": ["a) 12%", "b) 14%", "c) 16%", "d) 15%", "e) 20%"]
+      },
+      {
+        "question": "A sum amounts to Rs.6050 in 2 years and Rs.7320.5 in 4 years at compound interest. What is the sum?",
+        "answer": "a) Rs.5000",
+        "options": [
+          "a) Rs.5000",
+          "b) Rs.6000",
+          "c) Rs.7500",
+          "d) Rs.8200",
+          "e) Rs.9200"
+        ]
+      },
+      {
+        "question": "A sum doubles in six years at compound interest. In how many years will it become eight times?",
+        "answer": "d) 18",
+        "options": ["a) 36", "b) 48", "c) 50", "d) 18", "e) none of these"]
+      },
+      {
+        "question": "Ajay (SI) and Vijay (CI) invested same sum at 20% p.a. for 3 years. Difference in amounts is Rs.256. Find the principal.",
+        "answer": "d) Rs.2000",
+        "options": [
+          "a) Rs.2500",
+          "b) Rs.1000",
+          "c) Rs.8000",
+          "d) Rs.2000",
+          "e) Rs.5000"
+        ]
+      },
+      {
+        "question": "For a sum, SI for 2 years is Rs.360 and CI is Rs.396. Find principal and rate.",
+        "answer": "a) Rs.1800 at 10%",
+        "options": [
+          "a) Rs.1800 at 10%",
+          "b) Rs.2000 at 9%",
+          "c) Rs.1500 at 12%",
+          "d) Rs.1600 at 11.25%",
+          "e) Rs.2200 at 8%"
+        ]
+      },
+      {
+        "question": "What is the sum of three hundred forty-five plus five hundred sixty-seven plus seven hundred eighty-nine?",
+        "answer": "c) one thousand seven hundred one",
+        "options": [
+          "a) one thousand two hundred one",
+          "b) one thousand four hundred one",
+          "c) one thousand seven hundred one",
+          "d) two thousand one"
+        ]
+      },
+      {
+        "question": "Simplify the expression open parenthesis seven plus eight close parenthesis times open parenthesis five plus six close parenthesis",
+        "answer": "b) seventy-five",
+        "options": [
+          "a) sixty-five",
+          "b) seventy-five",
+          "c) eighty-five",
+          "d) ninety-five"
+        ]
+      },
+      {
+        "question": "Solve one thousand two hundred thirty-four plus five thousand six hundred seventy-eight minus four thousand three hundred twenty-one",
+        "answer": "b) four thousand five hundred ninety-one",
+        "options": [
+          "a) four thousand five hundred eighty-one",
+          "b) four thousand five hundred ninety-one",
+          "c) four thousand five hundred ninety-two",
+          "d) four thousand five hundred ninety-three"
+        ]
+      },
+      {
+        "question": "Simplify three hundred forty-five plus six hundred seventy-eight plus one hundred twenty-three",
+        "answer": "b) one thousand one hundred forty-six",
+        "options": [
+          "a) one thousand one hundred forty-five",
+          "b) one thousand one hundred forty-six",
+          "c) one thousand one hundred forty-seven",
+          "d) one thousand one hundred forty-eight"
+        ]
+      },
+      {
+        "question": "Calculate five hundred sixty-seven minus three hundred forty-five plus one hundred twenty-three",
+        "answer": "a) three hundred forty-five",
+        "options": [
+          "a) three hundred forty-five",
+          "b) three hundred fifty-five",
+          "c) three hundred sixty-five",
+          "d) three hundred seventy-five"
+        ]
+      },
+      {
+        "question": "Find the product of forty-seven times fifty-three",
+        "answer": "b) two thousand four hundred ninety-one",
+        "options": [
+          "a) two thousand four hundred eleven",
+          "b) two thousand four hundred ninety-one",
+          "c) two thousand five hundred eleven",
+          "d) two thousand six hundred eleven"
+        ]
+      },
+      {
+        "question": "Multiply twenty-five times thirty-six",
+        "answer": "b) nine hundred",
+        "options": [
+          "a) eight hundred fifty",
+          "b) nine hundred",
+          "c) nine hundred fifty",
+          "d) one thousand"
+        ]
+      },
+      {
+        "question": "Calculate fifteen times twenty",
+        "answer": "b) three hundred",
+        "options": [
+          "a) two hundred",
+          "b) three hundred",
+          "c) four hundred",
+          "d) five hundred"
+        ]
+      },
+      {
+        "question": "Find the square of thirty-two",
+        "answer": "a) one thousand twenty-four",
+        "options": [
+          "a) one thousand twenty-four",
+          "b) one thousand twenty-five",
+          "c) one thousand thirty-four",
+          "d) one thousand forty-four"
+        ]
+      },
+      {
+        "question": "Calculate the square of fourteen",
+        "answer": "a) one hundred ninety-six",
+        "options": [
+          "a) one hundred ninety-six",
+          "b) one hundred ninety-eight",
+          "c) two hundred",
+          "d) two hundred two"
+        ]
+      },
+      {
+        "question": "A train labelled A departs Station P at nine o’clock a m at a speed of eighty‐four kilometres per hour. Another train labelled B departs Station Q forty minutes later toward Station P. If the distance between Station P and Station Q is five hundred forty‐two kilometres and the two trains meet three hours after Train B starts, what is the speed of Train B in kilometres per hour?",
+        "answer": "b) seventy‐eight kilometres per hour",
+        "options": [
+          "a) seventy‐five kilometres per hour",
+          "b) seventy‐eight kilometres per hour",
+          "c) eighty kilometres per hour",
+          "d) seventy‐two kilometres per hour"
+        ]
+      },
+      {
+        "question": "A boy runs five full laps around a circular track whose diameter is forty‐eight metres at a constant speed of twenty‐seven kilometres per hour. How many seconds does he take to finish those five laps? Use pi equals three.",
+        "answer": "a) ninety‐six seconds",
+        "options": [
+          "a) ninety‐six seconds",
+          "b) eighty‐four seconds",
+          "c) one hundred two seconds",
+          "d) one hundred eight seconds"
+        ]
+      },
+      {
+        "question": "In a one thousand two hundred metre race, Runner A gives Runner B a five‐second head start and still finishes five seconds before Runner B. In the same race, Runner A gives Runner C a ten‐second head start and still finishes ten seconds ahead of Runner C. If in a fresh race, Runner B gives Runner C a five‐second head start, by how many seconds will Runner B win?",
+        "answer": "c) fifteen seconds",
+        "options": [
+          "a) five seconds",
+          "b) ten seconds",
+          "c) fifteen seconds",
+          "d) twenty seconds"
+        ]
+      },
+      {
+        "question": "A truck travels six hundred fifty kilometres in twenty‐six hours. A car travels at a speed twenty per cent more than the truck’s average speed. A train travels at a speed forty per cent more than the car. How many hours does it take the train to cover eight hundred forty kilometres?",
+        "answer": "b) twelve hours",
+        "options": [
+          "a) ten hours",
+          "b) twelve hours",
+          "c) sixteen hours",
+          "d) twenty hours"
+        ]
+      },
+      {
+        "question": "Amit cycles from Point A to Point B at twenty metres per second and then returns from Point B to Point A at twenty‐eight kilometres per hour. What is the average speed for his entire round trip expressed in metres per second?",
+        "answer": "a) eleven point two metres per second",
+        "options": [
+          "a) eleven point two metres per second",
+          "b) twelve point five metres per second",
+          "c) thirteen point five metres per second",
+          "d) fifteen metres per second"
+        ]
+      },
+      {
+        "question": "A runner covers a distance of fifteen hundred metres in four minutes. Convert the runner’s speed into kilometres per hour.",
+        "answer": "d) twenty‑two point five kilometres per hour",
+        "options": [
+          "a) ten point eight kilometres per hour",
+          "b) fifteen kilometres per hour",
+          "c) eighteen kilometres per hour",
+          "d) twenty‑two point five kilometres per hour"
+        ]
+      },
+      {
+        "question": "Two cyclists start from the same point, one heading east at twelve kilometres per hour, the other heading north at sixteen kilometres per hour. After two hours, what is the straight‑line distance between them in kilometres?",
+        "answer": "b) twenty kilometres",
+        "options": [
+          "a) ten kilometres",
+          "b) twenty kilometres",
+          "c) twenty‑two kilometres",
+          "d) twenty‑five kilometres"
+        ]
+      },
+      {
+        "question": "A person walks to work at five kilometres per hour and returns home at three kilometres per hour. What is the average speed of the round trip in kilometres per hour?",
+        "answer": "c) three point seven five kilometres per hour",
+        "options": [
+          "a) four kilometres per hour",
+          "b) three point five kilometres per hour",
+          "c) three point seven five kilometres per hour",
+          "d) three kilometres per hour"
+        ]
+      },
+      {
+        "question": "A taxi travels sixty kilometres in one hour fifteen minutes. What is the average speed in metres per second?",
+        "answer": "a) thirteen point three three metres per second",
+        "options": [
+          "a) thirteen point three three metres per second",
+          "b) fourteen point two six metres per second",
+          "c) fifteen metres per second",
+          "d) twenty metres per second"
+        ]
+      },
+      {
+        "question": "Two trains, each of length three hundred metres, travel in opposite directions at speeds of ninety kilometres per hour and one hundred ten kilometres per hour on parallel tracks. How many seconds until they completely pass one another from the moment their front ends meet?",
+        "answer": "c) four point eight seconds",
+        "options": [
+          "a) three point six seconds",
+          "b) four seconds",
+          "c) four point eight seconds",
+          "d) five point two seconds"
+        ]
+      },
+      {
+        "question": "A shuttle runs twenty‑four hours a day in a straight line between two stations that are four hundred kilometres apart. If its one‑way travel takes five hours including stops, how many round‑trips can it complete in one day?",
+        "answer": "b) two round‑trips",
+        "options": [
+          "a) one round‑trip",
+          "b) two round‑trips",
+          "c) three round‑trips",
+          "d) four round‑trips"
+        ]
+      },
+      {
+        "question": "A car travels the first half of a journey at fifty kilometres per hour and the second half at twenty‑five kilometres per hour. What is its average speed for the entire journey in kilometres per hour?",
+        "answer": "c) thirty‑three point three three kilometres per hour",
+        "options": [
+          "a) thirty kilometres per hour",
+          "b) thirty‑three kilometres per hour",
+          "c) thirty‑three point three three kilometres per hour",
+          "d) thirty‑six kilometres per hour"
+        ]
+      },
+      {
+        "question": "A cyclist completes two‑thirds of a distance at ten kilometres per hour and the remaining one‑third at twenty kilometres per hour. What is the average speed for the entire distance in kilometres per hour?",
+        "answer": "a) twelve kilometres per hour",
+        "options": [
+          "a) twelve kilometres per hour",
+          "b) fourteen kilometres per hour",
+          "c) sixteen kilometres per hour",
+          "d) personally identifiable information"
+        ]
+      },
+      {
+        "question": "A walking escalator moves upward at two metres per second. A person walks upward on it at three metres per second. How far will the person travel in six seconds in metres?",
+        "answer": "c) thirty metres",
+        "options": [
+          "a) twenty metres",
+          "b) twenty‑five metres",
+          "c) thirty metres",
+          "d) thirty‑five metres"
+        ]
+      },
+      {
+        "question": "A train travels six hundred kilometres in four hours and then covers the next two hundred kilometres in three hours. What is its overall average speed in kilometres per hour?",
+        "answer": "b) one hundred kilometres per hour",
+        "options": [
+          "a) ninety kilometres per hour",
+          "b) one hundred kilometres per hour",
+          "c) one hundred ten kilometres per hour",
+          "d) one hundred twenty kilometres per hour"
+        ]
+      },
+      {
+        "question": "A car covers a distance of sixty kilometres in one hour and twenty minutes, then returns over the same path at twenty kilometres per hour. What is its average speed for the round trip in kilometres per hour?",
+        "answer": "d) twenty‑seven point three kilometres per hour",
+        "options": [
+          "a) twenty‑five kilometres per hour",
+          "b) twenty‑six kilometres per hour",
+          "c) twenty‑seven kilometres per hour",
+          "d) twenty‑seven point three kilometres per hour"
+        ]
+      },
+      {
+        "question": "A boat’s speed in still water is eight kilometres per hour. If the stream flows at two kilometres per hour, how long in hours does it take to travel twenty kilometres downstream?",
+        "answer": "a) two hours",
+        "options": [
+          "a) two hours",
+          "b) two point five hours",
+          "c) three hours",
+          "d) one point eight hours"
+        ]
+      },
+      {
+        "question": "A passenger train travels at a constant eighty kilometres per hour except that it stops for ten minutes at each of its three intermediate stations. What is the effective average speed for the entire journey of four hundred kilometres, including stops, in kilometres per hour?",
+        "answer": "c) seventy kilometres per hour",
+        "options": [
+          "a) sixty‑eight kilometres per hour",
+          "b) sixty‑nine kilometres per hour",
+          "c) seventy kilometres per hour",
+          "d) seventy‑one kilometres per hour"
+        ]
+      },
+      {
+        "question": "A man runs four kilometres in twenty minutes and then walks two kilometres in thirty minutes. What is his average speed for the six‑kilometre outing in kilometres per hour?",
+        "answer": "b) nine kilometres per hour",
+        "options": [
+          "a) eight kilometres per hour",
+          "b) nine kilometres per hour",
+          "c) ten kilometres per hour",
+          "d) eleven kilometres per hour"
+        ]
+      },
+      {
+        "question": "Car A travels 180 kilometres in three hours. Car B travels 120 kilometres in two hours. If they start together and swap speeds halfway through the journey, what distance have they covered by two hours?",
+        "answer": "d) 120 kilometres",
+        "options": [
+          "a) 100 kilometres",
+          "b) 110 kilometres",
+          "c) 115 kilometres",
+          "d) 120 kilometres"
+        ]
+      },
+      {
+        "question": "Ram can complete a job alone in twelve days and Rohit can complete it alone in fifteen days. They start together, but after X days Rohan—who is sixty percent as efficient as Ram—joins them, and together they finish the remaining work in two days. For how many days did Ram and Rohit work alone before Rohan joined?",
+        "answer": "b) four days",
+        "options": [
+          "a) three days",
+          "b) four days",
+          "c) five days",
+          "d) six days"
+        ]
+      },
+      {
+        "question": "A can do a piece of work in twenty‑five days and B can do the same work in twenty days. They start together but A quits five days before the work is done. In how many total days was the work completed?",
+        "answer": "a) thirteen and one‑third days",
+        "options": [
+          "a) thirteen and one‑third days",
+          "b) fifteen and three‑sevenths days",
+          "c) eleven and four‑ninths days",
+          "d) nine and three‑eighths days"
+        ]
+      },
+      {
+        "question": "Eight girls and twelve boys can complete a task in four days. If one boy alone would take sixty days to finish it, how many days would one girl alone take to complete the same task?",
+        "answer": "c) one hundred sixty days",
+        "options": [
+          "a) one hundred fifty days",
+          "b) one hundred forty days",
+          "c) one hundred sixty days",
+          "d) one hundred forty‑four days"
+        ]
+      },
+      {
+        "question": "A and B together finish a job in thirty‑six days. B and C together finish in forty‑five days. All three—A, B, and C—together finish in twenty‑four days. How many days would A and C, working together, need to complete the job?",
+        "answer": "b) twenty days",
+        "options": [
+          "a) thirty days",
+          "b) twenty days",
+          "c) twenty‑four days",
+          "d) forty‑eight days"
+        ]
+      },
+      {
+        "question": "A alone completes the work in eighty days, B alone in sixty‑four days, and C alone in one hundred sixty days. They all begin together. After twenty days A leaves, and then B leaves fifteen days before completion. In how many days from the start is the work finished?",
+        "answer": "c) forty‑eight days",
+        "options": [
+          "a) thirty‑six days",
+          "b) forty‑five days",
+          "c) forty‑eight days",
+          "d) thirty and two‑thirds days"
+        ]
+      },
+      {
+        "question": "A completes one‑third of a task in twenty days, while B completes one‑half of the same task in fifteen days. How many days will A and B, working together, take to finish the entire task?",
+        "answer": "a) ten days",
+        "options": [
+          "a) ten days",
+          "b) fifteen days",
+          "c) eighteen days",
+          "d) twenty days"
+        ]
+      },
+      {
+        "question": "A pipe fills a tank in ten hours. A second pipe fills the same tank in fifteen hours. A third pipe empties the tank in twenty hours. If all three pipes are open, how long will it take to fill the tank?",
+        "answer": "a) nine hours",
+        "options": [
+          "a) nine hours",
+          "b) ten hours",
+          "c) twelve hours",
+          "d) fifteen hours"
+        ]
+      },
+      {
+        "question": "Worker A is twice as efficient as Worker B. Together they can finish a project in nine days. How many days would Worker A alone need to finish the project?",
+        "answer": "b) fourteen days",
+        "options": [
+          "a) twelve days",
+          "b) fourteen days",
+          "c) sixteen days",
+          "d) eighteen days"
+        ]
+      },
+      {
+        "question": "Three persons A, B, and C can complete a job in five days together. If C alone takes twenty days, how many days will A and B together take to do the job?",
+        "answer": "a) six and two‑thirds days",
+        "options": [
+          "a) six and two‑thirds days",
+          "b) seven days",
+          "c) eight days",
+          "d) nine days"
+        ]
+      },
+      {
+        "question": "A contractor agrees to do a job in thirty days and hires twenty workers. After ten days, he finds that only one‑fifth of the job is done. How many additional workers must he hire to finish on time?",
+        "answer": "d) thirty workers",
+        "options": [
+          "a) ten workers",
+          "b) twenty‑five workers",
+          "c) twenty‑eight workers",
+          "d) thirty workers"
+        ]
+      },
+      {
+        "question": "A group of workers can complete a job in sixty days. But due to five workers leaving, it takes seventy‑five days. How many workers were originally in the group?",
+        "answer": "c) forty workers",
+        "options": [
+          "a) thirty‑five workers",
+          "b) thirty workers",
+          "c) forty workers",
+          "d) forty‑five workers"
+        ]
+      },
+      {
+        "question": "A and B together do a piece of work in twelve days. If A alone can do it in twenty days, how long would B alone take?",
+        "answer": "b) thirty days",
+        "options": [
+          "a) twenty‑five days",
+          "b) thirty days",
+          "c) thirty‑five days",
+          "d) forty days"
+        ]
+      },
+      {
+        "question": "A can do a job in fourteen days and B in twenty‑one days. If they work alternately starting with A, how many days to finish the work?",
+        "answer": "c) twelve days",
+        "options": [
+          "a) eleven days",
+          "b) eleven and a half days",
+          "c) twelve days",
+          "d) twelve and a half days"
+        ]
+      },
+      {
+        "question": "A, B, and C can do a work in sixteen, twenty, and twenty‑four days respectively. B starts and works for four days, then A works for four days, then C works alone to finish. How many total days are required?",
+        "answer": "d) eight days",
+        "options": [
+          "a) six days",
+          "b) seven days",
+          "c) seven and a half days",
+          "d) eight days"
+        ]
+      },
+      {
+        "question": "Two taps A and B fill a tank in twenty and thirty hours respectively. Tap C empties it in forty hours. If A and B run for six hours then C runs alone for four hours, how much of the tank is filled?",
+        "answer": "c) one‑half of the tank",
+        "options": [
+          "a) one‑third of the tank",
+          "b) two‑fifths of the tank",
+          "c) one‑half of the tank",
+          "d) three‑fifths of the tank"
+        ]
+      },
+      {
+        "question": "A worker alone takes twenty days to finish a job. A helper alone takes thirty days to finish it. But if the helper works only half the day and the worker works full day, how many days to finish together?",
+        "answer": "b) twelve days",
+        "options": [
+          "a) ten days",
+          "b) twelve days",
+          "c) fifteen days",
+          "d) eighteen days"
+        ]
+      },
+      {
+        "question": "A trader offers a discount of twenty percent on the marked price of an item. To still earn a profit of twelve percent on his cost price, by what percentage must he mark up the selling price above the cost price?",
+        "answer": "b) forty percent",
+        "options": [
+          "a) twenty percent",
+          "b) forty percent",
+          "c) twenty‑five percent",
+          "d) thirty‑five percent"
+        ]
+      },
+      {
+        "question": "A book is sold for seven hundred four rupees with a profit of ten percent. If that same book were sold for six hundred sixty‑four rupees, what would be the resulting percentage of profit or loss?",
+        "answer": "a) three point seven five percent loss",
+        "options": [
+          "a) three point seven five percent loss",
+          "b) four point two five percent loss",
+          "c) three point seven five percent profit",
+          "d) four point two five percent profit"
+        ]
+      },
+      {
+        "question": "Sunita sold an old laptop at a loss of forty‑seven percent for six thousand three hundred sixty rupees. To earn a profit of thirteen percent instead, at what selling price should she have sold it?",
+        "answer": "a) thirteen thousand five hundred sixty rupees",
+        "options": [
+          "a) thirteen thousand five hundred sixty rupees",
+          "b) eleven thousand five hundred fifty rupees",
+          "c) twelve thousand five hundred fifty rupees",
+          "d) thirteen thousand five hundred fifty rupees"
+        ]
+      },
+      {
+        "question": "A dishonest shopkeeper cheats by giving nine hundred grams of goods for every one thousand grams sold at twenty rupees per kilogram. If he had nine hundred kilograms of goods in stock, how much extra money will he earn by cheating customers in this way?",
+        "answer": "b) two thousand rupees",
+        "options": [
+          "a) three thousand rupees",
+          "b) two thousand rupees",
+          "c) four thousand five hundred rupees",
+          "d) five thousand rupees"
+        ]
+      },
+      {
+        "question": "Shares of Vodafone cost eleven rupees each, and shares of Yes Bank cost nine rupees each, Reliance eight rupees, and SBI ten rupees. If each share is sold two rupees above its purchase price, which share yields the highest percentage gain?",
+        "answer": "d) SBI shares",
+        "options": [
+          "a) Vodafone shares",
+          "b) Yes Bank shares",
+          "c) Reliance shares",
+          "d) SBI shares"
+        ]
+      },
+      {
+        "question": "A retailer buys an article for five hundred rupees and sells it for seven hundred fifty rupees. What is his profit percentage?",
+        "answer": "a) fifty percent",
+        "options": [
+          "a) fifty percent",
+          "b) forty percent",
+          "c) twenty‑five percent",
+          "d) one hundred fifty percent"
+        ]
+      },
+      {
+        "question": "A merchant marks his goods fifty percent above cost price but allows a twenty percent discount on the marked price. What is his overall profit percentage?",
+        "answer": "b) ten percent",
+        "options": [
+          "a) fifteen percent",
+          "b) ten percent",
+          "c) twenty percent",
+          "d) five percent"
+        ]
+      },
+      {
+        "question": "A shopkeeper sells an item at a loss of six percent. If he had sold it for two hundred rupees more, he would have gained four percent. What is the cost price of the item?",
+        "answer": "c) two thousand rupees",
+        "options": [
+          "a) fifteen hundred rupees",
+          "b) one thousand eight hundred rupees",
+          "c) two thousand rupees",
+          "d) two thousand five hundred rupees"
+        ]
+      },
+      {
+        "question": "A man bought a bicycle for four thousand rupees and later sold it at a profit of twelve and a half percent. At what price did he sell the bicycle?",
+        "answer": "d) four thousand five hundred rupees",
+        "options": [
+          "a) four thousand two hundred rupees",
+          "b) four thousand three hundred rupees",
+          "c) four thousand eight hundred rupees",
+          "d) four thousand five hundred rupees"
+        ]
+      },
+      {
+        "question": "A trader marks his price at ten percent above cost price and then allows a discount of five percent. What is his net profit percentage?",
+        "answer": "a) four point five percent",
+        "options": [
+          "a) four point five percent",
+          "b) five percent",
+          "c) five point five percent",
+          "d) six percent"
+        ]
+      },
+      {
+        "question": "A commodity costs one thousand rupees. Its price rises by twenty percent and then falls by twenty percent. What is the final price in rupees?",
+        "answer": "c) nine hundred sixty rupees",
+        "options": [
+          "a) nine hundred rupees",
+          "b) one thousand rupees",
+          "c) nine hundred sixty rupees",
+          "d) eight hundred rupees"
+        ]
+      },
+      {
+        "question": "A dealer mixes tea worth two hundred rupees per kilogram with tea worth one hundred fifty rupees per kilogram in the ratio two to three. At what price per kilogram should he sell the mixture to gain ten percent?",
+        "answer": "d) one hundred eighty‑seven rupees fifty paise per kilogram",
+        "options": [
+          "a) one hundred seventy‑five rupees per kilogram",
+          "b) one hundred sixty rupees per kilogram",
+          "c) one hundred eighty rupees per kilogram",
+          "d) one hundred eighty‑seven rupees fifty paise per kilogram"
+        ]
+      },
+      {
+        "question": "A shopkeeper claims to sell his goods at cost price but uses a nonstandard weight of nine hundred grams for one kilogram. What is his percentage gain?",
+        "answer": "b) eleven point one one percent",
+        "options": [
+          "a) ten percent",
+          "b) eleven point one one percent",
+          "c) twelve percent",
+          "d) fifteen percent"
+        ]
+      },
+      {
+        "question": "A man sells two‑thirds of his stock at a profit of twenty percent and the remaining one‑third at a loss of ten percent. What overall percentage profit or loss does he make?",
+        "answer": "a) three point two five percent profit",
+        "options": [
+          "a) three point two five percent profit",
+          "b) two point five percent profit",
+          "c) one percent loss",
+          "d) no profit no loss"
+        ]
+      },
+      {
+        "question": "A wholesaler marks up his goods thirty percent above his cost price and then offers a twenty percent discount. If his selling price is four thousand rupees, what was his original cost price?",
+        "answer": "c) three thousand eight hundred rupees",
+        "options": [
+          "a) three thousand two hundred rupees",
+          "b) three thousand five hundred rupees",
+          "c) three thousand eight hundred rupees",
+          "d) four thousand rupees"
+        ]
+      },
+      {
+        "question": "A shopkeeper bought an article for six hundred rupees and sold it at a profit of twenty‑five percent. A customer returns it within the time of no‑return policy, and the shopkeeper agrees to buy it back at cost price. How much net profit or loss did the shopkeeper make overall?",
+        "answer": "d) nothing—no profit no loss",
+        "options": [
+          "a) twenty‑five percent profit",
+          "b) twenty percent profit",
+          "c) fifteen percent profit",
+          "d) no profit no loss"
+        ]
+      }
+    ],
+    "type": "MCQ"
+  }
+}

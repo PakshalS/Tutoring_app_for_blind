@@ -5,6 +5,7 @@ import '../screens/auth/login_page.dart';
 import '../screens/chat_screen.dart';
 import '../services/current_location_service.dart';
 import '../widgets/voice_wrapper.dart';
+import '../screens/quiz_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -67,6 +68,37 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 30),
+                  AnimatedContainer(
+                    duration: const Duration(milliseconds: 300),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.yellow[700],
+                        padding: const EdgeInsets.symmetric(vertical: 24),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        elevation: 10,
+                        shadowColor: Colors.yellow[300]!.withOpacity(0.5),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const QuizPage()),
+                        );
+                      },
+                      child: const Text(
+                        "Take Quiz",
+                        style: TextStyle(
+                          fontSize: 28,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black,
+                          letterSpacing: 1.2,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 30),
                   AnimatedContainer(
                     duration: const Duration(milliseconds: 300),
                     child: ElevatedButton(

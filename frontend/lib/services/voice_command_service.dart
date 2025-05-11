@@ -8,6 +8,7 @@ import 'package:frontend/screens/chapter_exercise_page.dart';
 import '../services/firebase_service.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import '../services/current_location_service.dart';
+import '../screens/quiz_page.dart';
 
 class VoiceCommandService {
   final Map<String, String> chapterMap;
@@ -28,6 +29,9 @@ class VoiceCommandService {
     } else if (cmd.contains('go to bot') || cmd.contains('go to chat')) {
       _speak("Opening chatbot.");
       _navigateTo(const ChatScreen());
+    } else if (cmd.contains('go to quiz')) {
+      _speak("Opening quiz.");
+      _navigateTo(const QuizPage());
     } else if (cmd.contains('go to chapter list')) {
       _speak("Opening chapter list.");
       _navigateTo(const ChapterListPage());
