@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/screens/chat_screen.dart';
-import 'package:frontend/screens/chapter_detail_page.dart';
-import 'package:frontend/screens/chapter_list_page.dart';
-import 'package:frontend/screens/home_page.dart';
-import 'package:frontend/main.dart'; // to get navigatorKey
-import 'package:frontend/screens/chapter_exercise_page.dart';
-import '../services/firebase_service.dart';
 import 'package:flutter_tts/flutter_tts.dart';
-import '../services/current_location_service.dart';
-import '../screens/quiz_page.dart';
-import '../screens/guide_screen.dart';
+import 'package:frontend/screens/home_page.dart';
+import 'package:frontend/screens/chat_screen.dart';
+import 'package:frontend/screens/chapter_list_page.dart';
+import 'package:frontend/screens/chapter_detail_page.dart';
+import 'package:frontend/screens/chapter_exercise_page.dart';
+import 'package:frontend/screens/quiz_page.dart';
+import 'package:frontend/screens/guide_screen.dart';
+import 'package:frontend/services/firebase_service.dart';
+import 'package:frontend/services/current_location_service.dart';
+import 'package:frontend/main.dart';
+import 'package:string_similarity/string_similarity.dart';
 
 class VoiceCommandService {
   final Map<String, String> chapterMap;
@@ -19,50 +20,69 @@ class VoiceCommandService {
   VoiceCommandService(this.chapterMap);
 
   void handleCommand(String command) {
-    final cmd = command.toLowerCase();
+    final cmd = command.toLowerCase().trim();
 
     if (cmd.contains('where')) {
-      final location = CurrentLocationService.getLocationMessage();
-      _speak(location);
-    } else if (cmd.contains('Open guide')) {
+      _speak(CurrentLocationService.getLocationMessage());
+    } else if (cmd.contains('open guide')) {
       _speak("Opening voice command guide.");
       _navigateTo(const GuideScreen());
-    } else if (cmd.contains('Open home')) {
+    } else if (cmd.contains('open home')) {
       _speak("Navigating to Home.");
       _navigateTo(const HomePage());
-    } else if (cmd.contains('Open bot') || cmd.contains('Open chat')) {
+    } else if (cmd.contains('open bot') || cmd.contains('open chat')) {
       _speak("Opening chatbot.");
       _navigateTo(const ChatScreen());
-    } else if (cmd.contains('Open quiz')) {
+    } else if (cmd.contains('open quiz')) {
       _speak("Opening quiz.");
       _navigateTo(const QuizPage());
-    } else if (cmd.contains('Open chapter list')) {
+    } else if (cmd.contains('open chapter list')) {
       _speak("Opening chapter list.");
       _navigateTo(const ChapterListPage());
-    } else if (cmd.contains('Open exercise of')) {
-      String chapterName = cmd.replaceAll('Open exercise of', '').trim();
-      _speak("Opening exercise of $chapterName");
-      _navigateToExercise(chapterName);
-    } else if (cmd.contains('go to')) {
-      String chapterName = cmd.replaceAll('go to', '').trim();
-      _speak("Opening chapter $chapterName");
-      _navigateToChapter(chapterName);
-    } else if (cmd.contains('go back')) {
-      if (navigatorKey.currentState?.canPop() ?? false) {
-        _speak("Going back.");
-        navigatorKey.currentState?.pop();
+    } else if (cmd.contains('open exercise of')) {
+      final name = cmd.split('exercise of').last.trim();
+      final matched = _fuzzyMatchChapter(name);
+      if (matched != null) {
+        _speak("Opening exercise of $matched");
+        _navigateToExercise(matched);
       } else {
-        _speak("No previous page to go back to.");
+        _speak("Couldn't match chapter for $name");
       }
+    } else if (cmd.startsWith('open ')) {
+      final name = cmd.replaceFirst('open ', '').trim();
+      final matched = _fuzzyMatchChapter(name);
+      if (matched != null) {
+        _speak("Opening chapter $matched");
+        _navigateToChapter(matched);
+      } else {
+        _speak("Couldn't match chapter for $name");
+      }
+    } else if (cmd.contains('go back')) {
+      _speak("Going back to home.");
+      navigatorKey.currentState?.pushAndRemoveUntil(
+        MaterialPageRoute(builder: (_) => const HomePage()),
+        (route) => false,
+      );
     } else {
       _speak("Sorry, I did not understand the command.");
     }
   }
 
+  /// Returns matched chapter name (from keys of chapterMap) or null
+  String? _fuzzyMatchChapter(String input) {
+    final keys = chapterMap.keys.toList();
+    final matches = input.bestMatch(keys);
+
+    final rating = matches.bestMatch.rating;
+    if (rating != null && rating >= 0.5) {
+      return matches.bestMatch.target;
+    }
+
+    return null;
+  }
+
   void _navigateTo(Widget page) {
-    navigatorKey.currentState?.push(
-      MaterialPageRoute(builder: (_) => page),
-    );
+    navigatorKey.currentState?.push(MaterialPageRoute(builder: (_) => page));
   }
 
   void _navigateToChapter(String name) {
@@ -94,7 +114,7 @@ class VoiceCommandService {
         } else {
           _speak("No exercises found for $name.");
         }
-      } catch (e) {
+      } catch (_) {
         _speak("Failed to load exercise for $name.");
       }
     } else {
