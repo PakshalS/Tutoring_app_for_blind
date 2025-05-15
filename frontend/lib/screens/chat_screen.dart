@@ -129,15 +129,19 @@ class _ChatScreenState extends State<ChatScreen> {
                   const SizedBox(width: 12), // Increased spacing
                   AnimatedContainer(
                     duration: const Duration(milliseconds: 300),
-                    child: IconButton(
-                      onPressed: _sendMessage,
-                      icon: Icon(
-                        Icons.send,
-                        size: 36, // Larger icon for accessibility
-                        color: Colors.yellow[700], // High contrast
+                    child: Semantics(
+                      label: "Send message",
+                      child: IconButton(
+                        onPressed: _sendMessage,
+                        icon: Icon(
+                          Icons.send,
+                          size: 36, // Larger icon for accessibility
+                          color: Colors.yellow[700], // High contrast
+                        ),
+                        padding:
+                            const EdgeInsets.all(12), // Larger touch target
+                        splashRadius: 28, // Visual feedback for interaction
                       ),
-                      padding: const EdgeInsets.all(12), // Larger touch target
-                      splashRadius: 28, // Visual feedback for interaction
                     ),
                   ),
                 ],

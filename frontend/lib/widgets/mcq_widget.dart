@@ -73,31 +73,37 @@ class _MCQWidgetState extends State<MCQWidget> {
               // Submit Button
               AnimatedContainer(
                 duration: const Duration(milliseconds: 300),
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.black, // Black button for contrast
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 20, horizontal: 40), // Larger touch area
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16), // Rounded edges
+                child: Semantics(
+                  label: "Submit Answer",
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor:
+                          Colors.black, // Black button for contrast
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 20, horizontal: 40), // Larger touch area
+                      shape: RoundedRectangleBorder(
+                        borderRadius:
+                            BorderRadius.circular(16), // Rounded edges
+                      ),
+                      elevation: 8, // Shadow for premium feel
+                      shadowColor:
+                          Colors.yellow[300]!.withOpacity(0.5), // Glow effect
                     ),
-                    elevation: 8, // Shadow for premium feel
-                    shadowColor:
-                        Colors.yellow[300]!.withOpacity(0.5), // Glow effect
-                  ),
-                  onPressed: selectedAnswer != null
-                      ? () {
-                          final isCorrect = selectedAnswer == correctAnswer;
-                          widget.onAnswerSubmitted(isCorrect, selectedAnswer!);
-                        }
-                      : null,
-                  child: const Text(
-                    "Submit Answer",
-                    style: TextStyle(
-                      fontSize: 24, // Large text for accessibility
-                      fontWeight: FontWeight.bold,
-                      color: Colors.yellow, // High contrast
-                      letterSpacing: 1.2, // Premium typography
+                    onPressed: selectedAnswer != null
+                        ? () {
+                            final isCorrect = selectedAnswer == correctAnswer;
+                            widget.onAnswerSubmitted(
+                                isCorrect, selectedAnswer!);
+                          }
+                        : null,
+                    child: const Text(
+                      "Submit Answer",
+                      style: TextStyle(
+                        fontSize: 24, // Large text for accessibility
+                        fontWeight: FontWeight.bold,
+                        color: Colors.yellow, // High contrast
+                        letterSpacing: 1.2, // Premium typography
+                      ),
                     ),
                   ),
                 ),

@@ -39,31 +39,34 @@ class HomePage extends StatelessWidget {
                 children: [
                   AnimatedContainer(
                     duration: const Duration(milliseconds: 300),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.yellow[700], // High contrast
-                        padding: const EdgeInsets.symmetric(vertical: 24),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(16),
+                    child: Semantics(
+                      label: "Chapter list",
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.yellow[700], // High contrast
+                          padding: const EdgeInsets.symmetric(vertical: 24),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          elevation: 10,
+                          shadowColor: Colors.yellow[300]!
+                              .withOpacity(0.5), // Glow effect
                         ),
-                        elevation: 10,
-                        shadowColor:
-                            Colors.yellow[300]!.withOpacity(0.5), // Glow effect
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const ChapterListPage()),
-                        );
-                      },
-                      child: const Text(
-                        "View Chapters",
-                        style: TextStyle(
-                          fontSize: 28, // Large text for accessibility
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black,
-                          letterSpacing: 1.2, // Premium typography
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const ChapterListPage()),
+                          );
+                        },
+                        child: const Text(
+                          "View Chapters",
+                          style: TextStyle(
+                            fontSize: 28, // Large text for accessibility
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black,
+                            letterSpacing: 1.2, // Premium typography
+                          ),
                         ),
                       ),
                     ),
@@ -71,30 +74,33 @@ class HomePage extends StatelessWidget {
                   const SizedBox(height: 30),
                   AnimatedContainer(
                     duration: const Duration(milliseconds: 300),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.yellow[700],
-                        padding: const EdgeInsets.symmetric(vertical: 24),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(16),
+                    child: Semantics(
+                      label: "Quiz",
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.yellow[700],
+                          padding: const EdgeInsets.symmetric(vertical: 24),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          elevation: 10,
+                          shadowColor: Colors.yellow[300]!.withOpacity(0.5),
                         ),
-                        elevation: 10,
-                        shadowColor: Colors.yellow[300]!.withOpacity(0.5),
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const QuizPage()),
-                        );
-                      },
-                      child: const Text(
-                        "Take Quiz",
-                        style: TextStyle(
-                          fontSize: 28,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black,
-                          letterSpacing: 1.2,
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const QuizPage()),
+                          );
+                        },
+                        child: const Text(
+                          "Take Quiz",
+                          style: TextStyle(
+                            fontSize: 28,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black,
+                            letterSpacing: 1.2,
+                          ),
                         ),
                       ),
                     ),
@@ -102,30 +108,34 @@ class HomePage extends StatelessWidget {
                   SizedBox(height: 30),
                   AnimatedContainer(
                     duration: const Duration(milliseconds: 300),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.yellow[700], // High contrast
-                        padding: const EdgeInsets.symmetric(vertical: 24),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(16),
+                    child: Semantics(
+                      label: "DoubtBOT",
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.yellow[700], // High contrast
+                          padding: const EdgeInsets.symmetric(vertical: 24),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          elevation: 10,
+                          shadowColor: Colors.yellow[300]!
+                              .withOpacity(0.5), // Glow effect
                         ),
-                        elevation: 10,
-                        shadowColor:
-                            Colors.yellow[300]!.withOpacity(0.5), // Glow effect
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => ChatScreen()),
-                        );
-                      },
-                      child: const Text(
-                        "DoubtBOT",
-                        style: TextStyle(
-                          fontSize: 28, // Large text for accessibility
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black,
-                          letterSpacing: 1.2, // Premium typography
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ChatScreen()),
+                          );
+                        },
+                        child: const Text(
+                          "DoubtBOT",
+                          style: TextStyle(
+                            fontSize: 28, // Large text for accessibility
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black,
+                            letterSpacing: 1.2, // Premium typography
+                          ),
                         ),
                       ),
                     ),
@@ -133,30 +143,33 @@ class HomePage extends StatelessWidget {
                   const SizedBox(height: 30),
                   AnimatedContainer(
                     duration: const Duration(milliseconds: 300),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.yellow[700],
-                        padding: const EdgeInsets.symmetric(vertical: 24),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(16),
+                    child: Semantics(
+                      label: "Guide",
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.yellow[700],
+                          padding: const EdgeInsets.symmetric(vertical: 24),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          elevation: 10,
+                          shadowColor: Colors.yellow[300]!.withOpacity(0.5),
                         ),
-                        elevation: 10,
-                        shadowColor: Colors.yellow[300]!.withOpacity(0.5),
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const GuideScreen()),
-                        );
-                      },
-                      child: const Text(
-                        "Voice Command Guide",
-                        style: TextStyle(
-                          fontSize: 28,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black,
-                          letterSpacing: 1.2,
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const GuideScreen()),
+                          );
+                        },
+                        child: const Text(
+                          "Voice Command Guide",
+                          style: TextStyle(
+                            fontSize: 28,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.black,
+                            letterSpacing: 1.2,
+                          ),
                         ),
                       ),
                     ),

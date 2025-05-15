@@ -19,6 +19,10 @@ class CurrentLocationService {
         return "You are in ${chapterName ?? ''} page.";
       case 'exercise':
         return "You are in the exercise of ${chapterName ?? ''}.";
+      case 'quiz':
+        return "You are in the quiz.";
+      case 'guide':
+        return "You are in the command guide.";
       default:
         return "You are in an unknown location.";
     }

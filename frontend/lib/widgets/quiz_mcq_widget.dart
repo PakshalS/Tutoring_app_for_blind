@@ -72,37 +72,46 @@ class QuizMCQWidget extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            ElevatedButton(
-              onPressed: currentIndex > 0 ? onPrevious : null,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.yellow[700],
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
-              ),
-              child: const Text("Previous",
-                  style: TextStyle(fontSize: 18, color: Colors.black)),
-            ),
-            if (currentIndex < total - 1)
-              ElevatedButton(
-                onPressed: onNext,
+            Semantics(
+              label: "Previous question",
+              child: ElevatedButton(
+                onPressed: currentIndex > 0 ? onPrevious : null,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.yellow[700],
                   padding:
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
                 ),
-                child: const Text("Next",
+                child: const Text("Previous",
                     style: TextStyle(fontSize: 18, color: Colors.black)),
+              ),
+            ),
+            if (currentIndex < total - 1)
+              Semantics(
+                label: "Next question",
+                child: ElevatedButton(
+                  onPressed: onNext,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.yellow[700],
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 14),
+                  ),
+                  child: const Text("Next",
+                      style: TextStyle(fontSize: 18, color: Colors.black)),
+                ),
               )
             else
-              ElevatedButton(
-                onPressed: onSubmit,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.redAccent,
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+              Semantics(
+                label: "Submit quiz",
+                child: ElevatedButton(
+                  onPressed: onSubmit,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.redAccent,
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 14),
+                  ),
+                  child: const Text("Submit",
+                      style: TextStyle(fontSize: 18, color: Colors.white)),
                 ),
-                child: const Text("Submit",
-                    style: TextStyle(fontSize: 18, color: Colors.white)),
               ),
           ],
         ),
