@@ -157,7 +157,7 @@ class _ChapterDetailPageState extends State<ChapterDetailPage> {
                           if (sortedKeys.isNotEmpty) const SizedBox(height: 30),
                           if (exercises != null)
                             Semantics(
-                              label: 'Go to Exercises Button',
+                              label: 'Open Exercises Button',
                               child: AnimatedContainer(
                                 duration: const Duration(milliseconds: 300),
                                 child: ElevatedButton(
@@ -191,7 +191,7 @@ class _ChapterDetailPageState extends State<ChapterDetailPage> {
                                     );
                                   },
                                   child: const Text(
-                                    "Go to Exercises",
+                                    "Open Exercises",
                                     style: TextStyle(
                                       fontSize:
                                           24, // Large text for accessibility

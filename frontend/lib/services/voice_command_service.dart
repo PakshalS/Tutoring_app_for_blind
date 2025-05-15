@@ -9,6 +9,7 @@ import '../services/firebase_service.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import '../services/current_location_service.dart';
 import '../screens/quiz_page.dart';
+import '../screens/guide_screen.dart';
 
 class VoiceCommandService {
   final Map<String, String> chapterMap;
@@ -23,20 +24,23 @@ class VoiceCommandService {
     if (cmd.contains('where')) {
       final location = CurrentLocationService.getLocationMessage();
       _speak(location);
-    } else if (cmd.contains('go to home')) {
+    } else if (cmd.contains('Open guide')) {
+      _speak("Opening voice command guide.");
+      _navigateTo(const GuideScreen());
+    } else if (cmd.contains('Open home')) {
       _speak("Navigating to Home.");
       _navigateTo(const HomePage());
-    } else if (cmd.contains('go to bot') || cmd.contains('go to chat')) {
+    } else if (cmd.contains('Open bot') || cmd.contains('Open chat')) {
       _speak("Opening chatbot.");
       _navigateTo(const ChatScreen());
-    } else if (cmd.contains('go to quiz')) {
+    } else if (cmd.contains('Open quiz')) {
       _speak("Opening quiz.");
       _navigateTo(const QuizPage());
-    } else if (cmd.contains('go to chapter list')) {
+    } else if (cmd.contains('Open chapter list')) {
       _speak("Opening chapter list.");
       _navigateTo(const ChapterListPage());
-    } else if (cmd.contains('go to exercise of')) {
-      String chapterName = cmd.replaceAll('go to exercise of', '').trim();
+    } else if (cmd.contains('Open exercise of')) {
+      String chapterName = cmd.replaceAll('Open exercise of', '').trim();
       _speak("Opening exercise of $chapterName");
       _navigateToExercise(chapterName);
     } else if (cmd.contains('go to')) {

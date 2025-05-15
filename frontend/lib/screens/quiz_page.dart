@@ -177,27 +177,29 @@ class _QuizPageState extends State<QuizPage> {
             ? const Center(
                 child: CircularProgressIndicator(color: Colors.yellow),
               )
-            : Padding(
-                padding: const EdgeInsets.all(24.0),
-                child: QuizMCQWidget(
-                  questionData: questions[currentQuestionIndex],
-                  currentIndex: currentQuestionIndex,
-                  total: questions.length,
-                  selectedAnswer: userAnswers[currentQuestionIndex],
-                  onAnswerSelected: (answer) => setState(() {
-                    userAnswers[currentQuestionIndex] = answer;
-                  }),
-                  onNext: () => setState(() {
-                    if (currentQuestionIndex < questions.length - 1) {
-                      currentQuestionIndex++;
-                    }
-                  }),
-                  onPrevious: () => setState(() {
-                    if (currentQuestionIndex > 0) {
-                      currentQuestionIndex--;
-                    }
-                  }),
-                  onSubmit: () => _submitQuiz(),
+            : SingleChildScrollView(
+                child: Padding(
+                  padding: const EdgeInsets.all(24.0),
+                  child: QuizMCQWidget(
+                    questionData: questions[currentQuestionIndex],
+                    currentIndex: currentQuestionIndex,
+                    total: questions.length,
+                    selectedAnswer: userAnswers[currentQuestionIndex],
+                    onAnswerSelected: (answer) => setState(() {
+                      userAnswers[currentQuestionIndex] = answer;
+                    }),
+                    onNext: () => setState(() {
+                      if (currentQuestionIndex < questions.length - 1) {
+                        currentQuestionIndex++;
+                      }
+                    }),
+                    onPrevious: () => setState(() {
+                      if (currentQuestionIndex > 0) {
+                        currentQuestionIndex--;
+                      }
+                    }),
+                    onSubmit: () => _submitQuiz(),
+                  ),
                 ),
               ),
       ),

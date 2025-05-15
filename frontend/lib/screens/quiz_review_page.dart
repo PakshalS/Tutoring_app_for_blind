@@ -32,12 +32,15 @@ class QuizReviewPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
-              "Score: $correctAnswers / ${results.length}",
-              style: TextStyle(
-                fontSize: 28,
-                color: Colors.yellow[700],
-                fontWeight: FontWeight.bold,
+            Semantics(
+              label: "Quiz Review",
+              child: Text(
+                "Score: $correctAnswers / ${results.length}",
+                style: TextStyle(
+                  fontSize: 28,
+                  color: Colors.yellow[700],
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
             const SizedBox(height: 20),
